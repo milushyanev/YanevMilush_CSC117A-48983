@@ -1,0 +1,14 @@
+﻿Build started 12/2/2015 2:21:00 PM.
+     1>Project "E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Homework\HW13.8\HW13.8\HW13.8.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>e:\college 2015-2016\yanevmilush_csc117a_48983\homework\yanevmilush_csc117a_48983\homework\hw13.8\hw13.8\main.cpp(13): warning C4305: '=' : truncation from 'double' to 'float'
+       Link:
+         C:\Program Files (x86)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Homework\HW13.8\Debug\HW13.8.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Homework\HW13.8\Debug\HW13.8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Homework\HW13.8\Debug\HW13.8.lib" /MACHINE:X86 Debug\main.obj
+         HW13.8.vcxproj -> E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Homework\HW13.8\Debug\HW13.8.exe
+     1>Done Building Project "E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Homework\HW13.8\HW13.8\HW13.8.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.65
