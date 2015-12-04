@@ -12,17 +12,17 @@ private:
 public:
 	//constructor
 	Bonus();
+
 	//desctructor
 	~Bonus();
 
 	//static member, chapter 14.1
 	static int BonH();
+	static int AI_Bns();
 	void setNumber() { cin >> number; };
 	int getNumber()const{ return number; };
 	int getBonus()const{ return chance; };
 	int getMBonus() const{ return chance*mBonus; };
 
-
 };
-
 #endif 

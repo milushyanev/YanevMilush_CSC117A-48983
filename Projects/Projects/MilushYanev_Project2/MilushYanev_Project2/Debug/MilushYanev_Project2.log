@@ -1,4 +1,4 @@
-﻿Build started 12/4/2015 1:43:38 AM.
+﻿Build started 12/4/2015 2:29:15 PM.
      1>Project "E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Projects\Projects\MilushYanev_Project2\MilushYanev_Project2\MilushYanev_Project2.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt BonusPt.cpp main.cpp
@@ -14,4 +14,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.44
+Time Elapsed 00:00:01.39

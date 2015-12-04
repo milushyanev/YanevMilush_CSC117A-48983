@@ -94,6 +94,7 @@ void gameManager()
 				//Print an ending message indicating loser.
 				cout << "\nSorry! Try again!\n" << endl;
 
+			//dealocate memory
 			delete result[0];
 			delete result[1];
 			delete[] result;
@@ -483,9 +484,10 @@ void enemyTurn(Actor &target, Actor &source)
 
 	//number must be from 1-10
 	int move = (rand() % 10) + 1;
+	//if move=6 call bonus
 	if (move = 6)
 	{
-		source.health += Bonus::BonH();
+		source.health += Bonus::AI_Bns();
 	}
 
 	// Randomly select an enemy action based on simple AI logic.
@@ -516,13 +518,12 @@ void playerTurn(Actor &target, Actor &source)
 
 	//number must be from 1-10
 	int move = (rand() % 10) + 1;
+	//if move=4 call bonus
 	if (move = 4)
 	{
 		source.health += Bonus::BonH();
 	}
 
-
-	
 
 	//Grab input from player on attack choice from a menu of choices.
 	//Call attack function based on player choice between 1-4.
