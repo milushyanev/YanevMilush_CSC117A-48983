@@ -15,6 +15,7 @@ using namespace std;
 
 #include "Actor.h"
 #include "BonusPt.h"
+#include "GameDate.h"
 
 int main()
 {	
@@ -77,28 +78,26 @@ void gameManager()
 		if (j == '1' || j == '2') {
 			
 			//Load function if player choose to continue with saved game.
-			result = load();
+			Actor *player = new Actor;
+			Actor *enemy = new Actor;
+			GameDate *date = new GameDate;
 
-			Actor &player = *result[0];
-			Actor &enemy = *result[1];
-			cout << player.fullName << " " << player.classSelected << " ";
-			cout<< player.health << " " << player.attack << endl;
-			cout << enemy.fullName << " " << enemy.classSelected << " ";
-			cout<< enemy.health << " " << enemy.attack << endl;
+			load(*date,*player, *enemy);
+
+			cout << player->fullName << " " << player->classSelected << " ";
+			cout<< player->health << " " << player->attack << endl;
+			cout << enemy->fullName << " " << enemy->classSelected << " ";
+			cout<< enemy->health << " " << enemy->attack << endl;
 
 			// true = win
-			if (battle(player, enemy))
+			if (battle(*player, *enemy))
 				// Print an ending message indicating winner.
 				cout << "\nCongratulations! You won!\n" << endl;
 			else
 				//Print an ending message indicating loser.
 				cout << "\nSorry! Try again!\n" << endl;
 
-			//dealocate memory
-			delete result[0];
-			delete result[1];
-			delete[] result;
-
+		
 			return;
 		}
 	} else if (n == '2') {
@@ -109,6 +108,9 @@ void gameManager()
 //Function startOption to determine character choice
 void startOption(string &fullName, string &classSelected, int &health, int &attack)
 {
+	GameDate *date = new GameDate;
+	GameDate::MDY(date);
+
 	cout << "\nChoose a player" << endl;
 	cout << "\n1. OptimusPrime ( 785 hp, 50 damage)" << endl;
 	cout << "\n2. Megatrone    ( 697 hp, 77 damage)" << endl;
@@ -171,10 +173,10 @@ void startOption(string &fullName, string &classSelected, int &health, int &atta
 	cout<< " hp and damage " << attack;
 	cout<< "!\n" << endl;
 	//Call save function to save previous entries.
-	save(fullName, classSelected, health, attack);
+	save(*date,fullName, classSelected, health, attack);
 }
 //Function save to save entries in the beginning of the game.
-void save(string fullName, string classSelected, int health, int attack)
+void save(GameDate &date,string fullName, string classSelected, int health, int attack)
 {
 	char choice;
 	//Write file.
@@ -187,23 +189,39 @@ void save(string fullName, string classSelected, int health, int attack)
 		//Write file in playerInfo.bin, which will occur in folder of game.
 		//Use binary save file.
 		writeFile.open("playerInfo.bin", ofstream::binary);
+
+		//write month from getMonth
+		int month = date.getMonth();
+		writeFile.write((char *)& month, sizeof(int));
+		
+		//write day from getDay
+		int day = date.getDay();
+		writeFile.write((char *)& day, sizeof(int));
+		
+		//write year from getYear
+		int year = date.getYear();
+		writeFile.write((char *)& year, sizeof(int));
+
 		//Declare the length using characters,which reffer to strings.
 		int length = fullName.length();
+
 		//Find how many characters are in string (+1).
 		writeFile.write((char *)&length, sizeof(int));
+
 		//Write size of characters.
 		writeFile.write(fullName.c_str(), length);
 
 		length = classSelected.length();
 		//Find how many characters are in string (+1).
 		writeFile.write((char *)&length, sizeof(int));
+
 		//Write size of characters.
 		writeFile.write(classSelected.c_str(), length);
 		
 		//Write health and attack as character pointers, using size.
 		writeFile.write((char *) & health, sizeof(health));
 		writeFile.write((char *) & attack, sizeof(attack));
-
+	
 		//writeFile << fullName << classSelected << health << attack;
 		cout << "The game has been saved\n";
 		//Close writen file.
@@ -219,18 +237,8 @@ void save(string fullName, string classSelected, int health, int attack)
 }
 //Function load to load previous save or external file.
 //Pass Struct as an array of pointers.
-Actor ** load()
+void load(GameDate &date,Actor &player, Actor &enemy)
 {
-	//Create an array of Struct and pass by pointer.
-	Actor **result = new Actor *[2];
-	//result[0] reffers to player stats.
-	result[0] = new Actor;
-	//result[1] refers to enemy stats.
-	result[1] = new Actor;
-	//Initialize pointers to references.
-	Actor &player = *result[0];
-	Actor &enemy = *result[1];
-
 	ifstream readFile;
 	int health;
 	int attack;
@@ -238,6 +246,18 @@ Actor ** load()
 	//You can also add you personal file to be read.
 	readFile.open("playerInfo.bin", ifstream::binary);
 
+	int month = 0;
+	readFile.read((char*)&month, sizeof(int));
+
+	int day = 0;
+	readFile.read((char*)&day, sizeof(int));
+
+	int year = 0;
+	readFile.read((char*)&year, sizeof(int));
+
+	date.setMonth(month);
+	date.setDay(day);
+	date.setYear(year);
 	
 	int length = 0;
 	readFile.read((char *) &length, sizeof(int));
@@ -252,7 +272,7 @@ Actor ** load()
 	}
 	readFile.read(buffer, length);
 	string fullName(buffer);
-	//allocate memory
+	//release allocated memory
 	delete [] buffer;
 
 	
@@ -266,7 +286,7 @@ Actor ** load()
 	}
 	readFile.read(buffer, length);
 	string classSelected(buffer);
-	//allocate memory.
+	//release allocated memory.
 	delete[] buffer;
 
 	readFile.read((char *)& health, sizeof(int));
@@ -277,8 +297,11 @@ Actor ** load()
 	player.health = health;
 	player.attack = attack;
 	player.energy = 0;
+
+	//declare date first !!!
 	
 	//Print message.
+	cout << "\nDate:> " << date.getMonth() << " " << date.getDay() << " " << date.getYear()<<endl;
 	cout << "\nHello, " << player.fullName;
 	cout<< "! You have chosen " << player.classSelected;
 	cout << ", your health is " << player.health;
@@ -307,13 +330,13 @@ Actor ** load()
 		enemy.health = 655;
 		enemy.energy = 0;
 	}
+	
 	cout << "\nYour enemy is " << enemy.fullName;
 	cout<< ", with health  " << enemy.health;
 	cout << ", energy is " << enemy.energy << " and damage  ";
 	cout<< enemy.attack << endl;
 	//Close file and continue.
 	readFile.close();
-	return result;
 }
 //Player attack. 
 void playerAttack(Actor &target, Actor &player) 
