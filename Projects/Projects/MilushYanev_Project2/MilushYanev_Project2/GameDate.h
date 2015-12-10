@@ -27,7 +27,7 @@ public:
 	void setDay(int);
 	void setYear(int);
 
-	//using static members
+	//using static members as void
 	static void MDY(GameDate *);
 
 	//functuions to get data and print

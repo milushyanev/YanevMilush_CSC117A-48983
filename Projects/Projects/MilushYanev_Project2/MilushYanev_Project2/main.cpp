@@ -82,8 +82,10 @@ void gameManager()
 			Actor *enemy = new Actor;
 			GameDate *date = new GameDate;
 
+			//load
 			load(*date,*player, *enemy);
 
+			//print message
 			cout << player->fullName << " " << player->classSelected << " ";
 			cout<< player->health << " " << player->attack << endl;
 			cout << enemy->fullName << " " << enemy->classSelected << " ";
@@ -246,15 +248,19 @@ void load(GameDate &date,Actor &player, Actor &enemy)
 	//You can also add you personal file to be read.
 	readFile.open("playerInfo.bin", ifstream::binary);
 
+	//read month from binary file
 	int month = 0;
 	readFile.read((char*)&month, sizeof(int));
 
+	//read day from binary file
 	int day = 0;
 	readFile.read((char*)&day, sizeof(int));
 
+	//read year from binary file
 	int year = 0;
 	readFile.read((char*)&year, sizeof(int));
 
+	//declare date type
 	date.setMonth(month);
 	date.setDay(day);
 	date.setYear(year);
@@ -298,8 +304,6 @@ void load(GameDate &date,Actor &player, Actor &enemy)
 	player.attack = attack;
 	player.energy = 0;
 
-	//declare date first !!!
-	
 	//Print message.
 	cout << "\nDate:> " << date.getMonth() << " " << date.getDay() << " " << date.getYear()<<endl;
 	cout << "\nHello, " << player.fullName;
@@ -546,7 +550,15 @@ void playerTurn(Actor &target, Actor &source)
 	{
 		source.health += Bonus::BonH();
 	}
+	//if bumblebee selected you can gain extra power
+	smack(source);
 
+	//If the function blocks, no need to use playerAttack.
+	if (!block(target)) // if not blocked
+	{
+		// Call attack function based on AI choice.
+		playerAttack(target, source);
+	}
 
 	//Grab input from player on attack choice from a menu of choices.
 	//Call attack function based on player choice between 1-4.
