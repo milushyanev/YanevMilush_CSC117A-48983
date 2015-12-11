@@ -24,6 +24,12 @@
     <ClCompile Include="GameDate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Developer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Creator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h">
@@ -33,6 +39,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GameDate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Developer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Creator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

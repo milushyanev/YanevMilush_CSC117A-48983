@@ -23,7 +23,6 @@ GameDate::GameDate(const GameDate &obj)
 //destructor
 GameDate::~GameDate()
 {
-
 }
 //set Day
 void GameDate::setDay(int d)
@@ -34,7 +33,6 @@ void GameDate::setDay(int d)
 void GameDate::setMonth(int m)
 {
 	this->month = m;
-
 }
 //set Year
 void GameDate::setYear(int y)
@@ -66,12 +64,12 @@ void GameDate::print()
 		"May", "June", "July", "August", "September", "October", "November", "December" };
 
 	//printing message month,day,year
+	cout << "\n*************************************************" << endl;
 	cout << MonthName[month] << " " << day << " " << year << endl;
+	cout << "*************************************************" << endl;
 }
-
 void GameDate::MDY(GameDate *date)
 {
-
 	//initialize variables
 	int day = 0;
 	int month = 0;
@@ -80,7 +78,6 @@ void GameDate::MDY(GameDate *date)
 	//enter a valid month
 	cout << "Please enter a month between 1-12" << endl;
 	cin >> month;
-
 	//while loop to check input 
 	while (month < 1 || month>12)
 	{
@@ -141,7 +138,6 @@ void GameDate::MDY(GameDate *date)
 	date->setDay(day);
 	date->setMonth(month);
 	date->setYear(year);
-
 	//print out date
 	date->print();
 }

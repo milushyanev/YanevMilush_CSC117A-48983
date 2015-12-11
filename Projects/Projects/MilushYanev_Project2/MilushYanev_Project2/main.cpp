@@ -6,6 +6,7 @@
 /******************************************************************************/
 
 #include <iostream>
+#include <cstdlib>
 #include <fstream>
 #include <ctime>
 #include<string>
@@ -16,10 +17,11 @@ using namespace std;
 #include "Actor.h"
 #include "BonusPt.h"
 #include "GameDate.h"
+#include "Developer.h"
+#include "Creator.h"
 
 int main()
 {	
-	
 	//Function startMenu will exist only in main().
 	startMenu();
 
@@ -33,6 +35,7 @@ void startMenu()
 
 	cout << "1. Start New Game " << endl;
 	cout << "2. Quit" << endl;
+	cout << "3. Info about creator" << endl;
 	
 	//call gameManager() function.
 	gameManager();
@@ -51,7 +54,7 @@ void gameManager()
 
 	cin >> n;
 	//While loop to make sure that entered choice is correct.
-	while (n != '1' && n != '2')
+	while (n != '1' && n != '2' && n !='3')
 	{
 		cout << "Invalid entry. Please enter either '1' or '2': ";
 		cin >> n;
@@ -73,7 +76,6 @@ void gameManager()
 		{
 			//Call startOption menu to pick up character.
 			startOption(fullName, classSelected, health, attack);
-
 		}
 		if (j == '1' || j == '2') {
 			
@@ -99,12 +101,15 @@ void gameManager()
 				//Print an ending message indicating loser.
 				cout << "\nSorry! Try again!\n" << endl;
 
-		
 			return;
 		}
 	} else if (n == '2') {
 		//Print an ending message.
 		cout << "\nGood Bye!\n" << endl;
+	}
+	else if (n == '3'){
+	
+		CRTR();
 	}
 }
 //Function startOption to determine character choice
@@ -135,9 +140,7 @@ void startOption(string &fullName, string &classSelected, int &health, int &atta
 		cout << "\nCongratulations You Have Chosen  OptimusPrime" << endl;
 		classSelected = "OptimusPrime";
 		health = 785;
-		attack = 63;
-
-
+		attack = 3;
 	}
 	else if (m == '2')
 	{
@@ -228,14 +231,12 @@ void save(GameDate &date,string fullName, string classSelected, int health, int 
 		cout << "The game has been saved\n";
 		//Close writen file.
 		writeFile.close();
-
 	}
 	else
 	{
 		//If enter is N, skip writing, end function.
 		exit(0);
 	}
-
 }
 //Function load to load previous save or external file.
 //Pass Struct as an array of pointers.
@@ -281,7 +282,6 @@ void load(GameDate &date,Actor &player, Actor &enemy)
 	//release allocated memory
 	delete [] buffer;
 
-	
 	readFile.read((char *)&length, sizeof(int));
 
 	buffer = new char[length + 1];
@@ -316,25 +316,24 @@ void load(GameDate &date,Actor &player, Actor &enemy)
 	if (move <= 35)
 	{
 		enemy.fullName = "AI.Hard";
-		enemy.attack = 60;
-		enemy.health = 650;
+		enemy.attack = 100;
+		enemy.health = 800;
 		enemy.energy = 0;
 	}
 	else if (move > 35 && move <= 85)
 	{
 		enemy.fullName = "AI.Normal";
-		enemy.attack = 50;
-		enemy.health = 600;
+		enemy.attack = 90;
+		enemy.health = 750;
 		enemy.energy = 0;
 	}
 	else if (move > 85 && move <= 100)
 	{
 		enemy.fullName = "AI.Insane";
-		enemy.attack = 70;
-		enemy.health = 655;
+		enemy.attack = 95;
+		enemy.health = 800;
 		enemy.energy = 0;
 	}
-	
 	cout << "\nYour enemy is " << enemy.fullName;
 	cout<< ", with health  " << enemy.health;
 	cout << ", energy is " << enemy.energy << " and damage  ";
@@ -343,6 +342,31 @@ void load(GameDate &date,Actor &player, Actor &enemy)
 	readFile.close();
 }
 //Player attack. 
+void CRTR()
+{
+	//class Developer to create name,number,setdate
+	Developer dataE;
+
+	dataE.setName("Milush Yanev");
+	dataE.setNumber(17);
+	dataE.setDate("12.10.2015");
+
+	//call result from get function
+	cout << "\nName of Developer  :>" << dataE.getName() << endl;
+	cout << "Favorite Number is :>" << dataE.getNumber() << endl;
+	cout << "Game was created on:>" << dataE.getDate() << endl;
+
+	//class creator to set level and days
+	Creator dayLevl;
+
+	dayLevl.setLevel(78);
+	dayLevl.setDay(214);
+
+	//call result from get function
+	cout << "\nCurrent Level of Creator  :>" << dayLevl.getLevel() << endl;
+	cout << "Days needed to create game:>" << dayLevl.getDay() << "\n" << endl;
+
+}
 void playerAttack(Actor &target, Actor &player) 
 {
 	char choice = '0';
@@ -389,7 +413,6 @@ void playerAttack(Actor &target, Actor &player)
 		else if (move == 8)
 		{
 			ultimateAttack = 150;
-
 		}
 		else
 		{
@@ -404,7 +427,6 @@ void playerAttack(Actor &target, Actor &player)
 	else if (choice == '4')
 	{
 		return;
-
 	}
 }
 //Function for enemy attack moves.
@@ -417,7 +439,6 @@ void enemyAttack(Actor &target, Actor &enemy)
 	if (move == 1)
 	{
 		RandomAttack = 0;
-
 	}
 	else if (move > 1 && move <= 3 && enemy.energy >= 2)
 	{
@@ -499,24 +520,20 @@ void smack(Actor &player)
 //Function to determine Computer's turn.
 void enemyTurn(Actor &target, Actor &source)
 {
-
+	srand((unsigned)time(0));
+	//number must be from 1-10
+	int tt = (rand() % 10) + 1;
+	//if move=6 call bonus
+	if (tt == 6)
+	{
+		source.health += Bonus::AI_Bns();
+	}
 	//Add 1 energy per turn.
 	source.energy++;
 	if (source.energy < 0)
 	{
 		source.energy = 0;
 	}
-
-	srand((unsigned)time(0));
-
-	//number must be from 1-10
-	int move = (rand() % 10) + 1;
-	//if move=6 call bonus
-	if (move = 6)
-	{
-		source.health += Bonus::AI_Bns();
-	}
-
 	// Randomly select an enemy action based on simple AI logic.
 	//Randomize choice and use basic logic to make the game interesting.
 
@@ -530,26 +547,24 @@ void enemyTurn(Actor &target, Actor &source)
 }
 void playerTurn(Actor &target, Actor &source)
 {
-	//cout << "\nPLAYER ENERGY: " << source.energy << endl;
-	//cout << "\nENEMY ENERGY: " << target.energy << endl;
+	srand((unsigned)time(0));
+
+	//number must be from 1-10
+	int tt = (rand() % 10) + 1;
+	//if move=4 call bonus
+	if (tt == 4)
+	{
+		source.health += Bonus::BonH();
+	}
 	//energy++
 	source.energy++;
 	if (source.energy > 5)
 	{
 		source.energy = 5;
 	}
-
 	//If mage - chance to heal() at this start of turn if damaged.
 	heal(source);
-	srand((unsigned)time(0));
-
-	//number must be from 1-10
-	int move = (rand() % 10) + 1;
-	//if move=4 call bonus
-	if (move = 4)
-	{
-		source.health += Bonus::BonH();
-	}
+	
 	//if bumblebee selected you can gain extra power
 	smack(source);
 
@@ -559,7 +574,6 @@ void playerTurn(Actor &target, Actor &source)
 		// Call attack function based on AI choice.
 		playerAttack(target, source);
 	}
-
 	//Grab input from player on attack choice from a menu of choices.
 	//Call attack function based on player choice between 1-4.
 	//Energy check, if invalid choice loop for another choice.
@@ -611,7 +625,6 @@ bool battle(Actor &player, Actor &enemy)
 		//from 0-1,and then resets after one.Just make sure each player gets a 
 		//sequential turn.Alternate turn; if it was my turn, then it's his next.
 		myTurn = (myTurn ? false : true);
-
 	//Keep a running tally of the player and enemy's stats (i.e health& energy).
 	}	
 	cout << "\n " << player.fullName << ",who operates ";

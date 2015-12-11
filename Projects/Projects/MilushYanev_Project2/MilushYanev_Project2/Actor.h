@@ -11,7 +11,6 @@ struct Actor
 	string fullName;
 	string classSelected;
 	int energy;
-	
 };
 void load(GameDate &date,Actor &player, Actor &enemy);
 void startMenu();
@@ -24,5 +23,6 @@ void heal(Actor &player);
 void smack(Actor &player);
 bool block(Actor &player);
 bool battle(Actor &player, Actor &enemy);
+void CRTR();
 
 #endif 

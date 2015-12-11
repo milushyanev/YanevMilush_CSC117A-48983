@@ -11,12 +11,10 @@ Bonus::Bonus()
 		number = 0;
 		chance = 8;
 		mBonus = 15;
-	
 	}
 //call destructor
 Bonus::~Bonus()
 {
-	
 }
 int Bonus::BonH(){
 
@@ -58,7 +56,6 @@ int Bonus::BonH(){
 		BonScore = info.getBonus() * 6;
 		cout << "\nBonus health you have earned is: " << BonScore << "\n" << endl;
 	}
-
 	else if (move>0 && move < 20){
 		BonScore = info.getBonus() * 7;
 		cout << "\nBonus health you have earned is: " << BonScore << "\n" << endl;
@@ -105,7 +102,6 @@ int Bonus::AI_Bns()
 		BonScore = info.getBonus() * 6;
 		cout << "\nBonus health AI have earned is: " << BonScore << "\n" << endl;
 	}
-
 	else if (move>0 && move < 20){
 		BonScore = info.getBonus() * 7;
 		cout << "\nBonus health AI have earned is: " << BonScore << "\n" << endl;

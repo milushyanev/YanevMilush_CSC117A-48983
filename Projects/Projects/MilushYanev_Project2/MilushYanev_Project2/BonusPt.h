@@ -5,8 +5,8 @@
 using namespace std;
 
 //declare class
-class Bonus{
-
+class Bonus
+{
 private:
 	int number, chance, mBonus;
 public:
@@ -23,6 +23,5 @@ public:
 	int getNumber()const{ return number; };
 	int getBonus()const{ return chance; };
 	int getMBonus() const{ return chance*mBonus; };
-
 };
 #endif 

@@ -4,13 +4,10 @@
 class GameDate
 {
 private:
-
 	//initialize variables
-	//*day as pointer to create copy constructor
 	int day,
 		month,
 		year;
-
 public:
 
 	//constructor
@@ -35,7 +32,6 @@ public:
 	int getMonth();
 	int getYear();
 	void print();
-
 };
 
 
