@@ -90,6 +90,7 @@
     <ClInclude Include="Creator.h" />
     <ClInclude Include="Developer.h" />
     <ClInclude Include="GameDate.h" />
+    <ClInclude Include="my_NumberT.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

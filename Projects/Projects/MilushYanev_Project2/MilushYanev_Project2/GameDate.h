@@ -33,6 +33,4 @@ public:
 	int getYear();
 	void print();
 };
-
-
 #endif  

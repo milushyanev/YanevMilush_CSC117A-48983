@@ -344,21 +344,20 @@ void load(GameDate &date,Actor &player, Actor &enemy)
 //Player attack. 
 void CRTR()
 {
-	//class Developer to create name,number,setdate
-	Developer dataE;
-
-	dataE.setName("Milush Yanev");
-	dataE.setNumber(17);
-	dataE.setDate("12.10.2015");
-
-	//call result from get function
-	cout << "\nName of Developer  :>" << dataE.getName() << endl;
-	cout << "Favorite Number is :>" << dataE.getNumber() << endl;
-	cout << "Game was created on:>" << dataE.getDate() << endl;
-
-	//class creator to set level and days
+	//inheritance of Developer in Creator
 	Creator dayLevl;
 
+	//class Developer
+	dayLevl.setName("Milush Yanev");
+	dayLevl.setNumber(17);
+	dayLevl.setDate("12.10.2015");
+
+	//call result from get function
+	cout << "\nName of Developer  :>" << dayLevl.getName() << endl;
+	cout << "Favorite Number is :>" << dayLevl.getNumber() << endl;
+	cout << "Game was created on:>" << dayLevl.getDate() << endl;
+
+	//class Creator
 	dayLevl.setLevel(78);
 	dayLevl.setDay(214);
 

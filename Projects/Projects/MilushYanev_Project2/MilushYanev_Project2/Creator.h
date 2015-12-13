@@ -4,6 +4,7 @@
 #include "Developer.h"
 using namespace std;
 
+//inheritance of class Developer in class Creator
 class Creator :public Developer
 
 {

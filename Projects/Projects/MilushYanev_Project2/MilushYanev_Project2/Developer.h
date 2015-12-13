@@ -1,14 +1,18 @@
 #ifndef DEVELOPER_H
 #define DEVELOPER_H
 #include <string>
+#include "my_NumberT.h"
 
 using namespace std;
 
+//using also a Template
 class Developer{
 protected:
 	string name;
 	string date;
-	int number;
+	//template declaration
+	my_NumberT<int> number;
+	my_NumberT<float> salary;
 
 public:
 	Developer();
@@ -21,5 +25,6 @@ public:
 	string getName();
 	int getNumber();
 	string getDate();
+
 };
 #endif

@@ -1,4 +1,5 @@
 #include "Developer.h"
+#include "my_NumberT.h"
 
 //set default class
 Developer::Developer()
@@ -40,7 +41,7 @@ string Developer::getName()
 }
 int Developer::getNumber()
 {
-	return number;
+	return number.getValue();
 }
 string Developer::getDate()
 {
