@@ -1,14 +1,9 @@
-﻿Build started 12/12/2015 3:57:44 PM.
+﻿Build started 12/12/2015 4:07:29 PM.
      1>Project "E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Projects\Projects\MilushYanev_Project2\MilushYanev_Project2\MilushYanev_Project2.vcxproj" on node 2 (Build target(s)).
      1>Link:
-         C:\Program Files (x86)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Projects\Projects\MilushYanev_Project2\Debug\MilushYanev_Project2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Projects\Projects\MilushYanev_Project2\Debug\MilushYanev_Project2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Projects\Projects\MilushYanev_Project2\Debug\MilushYanev_Project2.lib" /MACHINE:X86 Debug\BonusPt.obj
-         Debug\Creator.obj
-         Debug\Developer.obj
-         Debug\GameDate.obj
-         Debug\main.obj
          MilushYanev_Project2.vcxproj -> E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Projects\Projects\MilushYanev_Project2\Debug\MilushYanev_Project2.exe
      1>Done Building Project "E:\College 2015-2016\YanevMilush_CSC117A_48983\Homework\YanevMilush_CSC117A_48983\Projects\Projects\MilushYanev_Project2\MilushYanev_Project2\MilushYanev_Project2.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.24
+Time Elapsed 00:00:00.03
