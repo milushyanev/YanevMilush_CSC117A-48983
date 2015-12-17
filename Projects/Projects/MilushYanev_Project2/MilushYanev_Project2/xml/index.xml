@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.10">
+  <compound refid="struct_actor" kind="struct"><name>Actor</name>
+    <member refid="struct_actor_1a5e634d4da03f27502b3acd6babb6c94b" kind="variable"><name>attack</name></member>
+    <member refid="struct_actor_1a6932c660e6b6293a66b393c3c9cb151a" kind="variable"><name>health</name></member>
+    <member refid="struct_actor_1a2cadac890a05336b48e5b247901f5b08" kind="variable"><name>fullName</name></member>
+    <member refid="struct_actor_1a7950bfa41c5bb7a4ae04c925f800271e" kind="variable"><name>classSelected</name></member>
+    <member refid="struct_actor_1ab3bf461c752924b24b2b9a81250e5274" kind="variable"><name>energy</name></member>
+  </compound>
+  <compound refid="class_bonus" kind="class"><name>Bonus</name>
+    <member refid="class_bonus_1a84e5e1deb2a89c40583d2f352260d5df" kind="variable"><name>number</name></member>
+    <member refid="class_bonus_1a219d8d0675a4a3af33181693def6e56e" kind="variable"><name>chance</name></member>
+    <member refid="class_bonus_1aa28ec1e2467dbe7eb5dbcbf1952451ed" kind="variable"><name>mBonus</name></member>
+    <member refid="class_bonus_1a005571f0961a2e0f1af2befc35d804cf" kind="function"><name>Bonus</name></member>
+    <member refid="class_bonus_1ace96cd91925b1f65b2c8596930fed6f5" kind="function"><name>~Bonus</name></member>
+    <member refid="class_bonus_1a9b49303ba2ac90ed51903d720c254d16" kind="function"><name>setNumber</name></member>
+    <member refid="class_bonus_1a8410340d40b2c2f94e6975da25715615" kind="function"><name>getNumber</name></member>
+    <member refid="class_bonus_1a20eafd1e0dc632fbbd86d860822e95bf" kind="function"><name>getBonus</name></member>
+    <member refid="class_bonus_1aaa4cc8b64910ad7fac1a0e2408a26338" kind="function"><name>getMBonus</name></member>
+    <member refid="class_bonus_1aad2515d0e2e8a4e0c6fcbbd01c167712" kind="function"><name>BonH</name></member>
+    <member refid="class_bonus_1ae2f51b8407ff820aa8a0a180d2158554" kind="function"><name>AI_Bns</name></member>
+  </compound>
+  <compound refid="class_creator" kind="class"><name>Creator</name>
+    <member refid="class_creator_1af79f8b6ef06ca851d7abc1e281527507" kind="variable"><name>day</name></member>
+    <member refid="class_creator_1a081986ae5392c432fce444ccad8f623e" kind="variable"><name>level</name></member>
+    <member refid="class_creator_1abdde228294a78387338fe874accd629b" kind="function"><name>Creator</name></member>
+    <member refid="class_creator_1af8ecf377073058ea5156afa2e79f901e" kind="function"><name>~Creator</name></member>
+    <member refid="class_creator_1acd24fa39930d724d13a21f30ec423e4f" kind="function"><name>setDay</name></member>
+    <member refid="class_creator_1a08a3e34a0fd9f2f0005f1fefd05f4f96" kind="function"><name>setLevel</name></member>
+    <member refid="class_creator_1a154311115ed492e31eec167458a6ec11" kind="function"><name>getDay</name></member>
+    <member refid="class_creator_1aa8247cf632e973741f6905a1030b9306" kind="function"><name>getLevel</name></member>
+  </compound>
+  <compound refid="class_developer" kind="class"><name>Developer</name>
+    <member refid="class_developer_1a0398c537a81a118c0cebd64e453554a8" kind="variable"><name>name</name></member>
+    <member refid="class_developer_1ad157908ba8bd6ac6b16c8e28502953be" kind="variable"><name>date</name></member>
+    <member refid="class_developer_1af8a79869e44207cd6d3ef176cff2f2d1" kind="variable"><name>number</name></member>
+    <member refid="class_developer_1adcd646e88c19d2570f285715076db8bb" kind="variable"><name>salary</name></member>
+    <member refid="class_developer_1a1acf937b03598b68b93c010bfc90f702" kind="function"><name>Developer</name></member>
+    <member refid="class_developer_1a24c1cde234cb63807179251c8516f69e" kind="function"><name>Developer</name></member>
+    <member refid="class_developer_1a70d27630049849deaf3fbc8fab301908" kind="function"><name>Developer</name></member>
+    <member refid="class_developer_1a3a358890cdc55c7c473bbe0865ca0dde" kind="function"><name>~Developer</name></member>
+    <member refid="class_developer_1aed0b441a49c60fcfbcdeb730bc6efb79" kind="function"><name>setName</name></member>
+    <member refid="class_developer_1afa96e363d27b88c0c54ebffadef4f728" kind="function"><name>setNumber</name></member>
+    <member refid="class_developer_1aebac796aa948255e4ca15c8fbbc0d010" kind="function"><name>setDate</name></member>
+    <member refid="class_developer_1abcaa88f55cd1dbd58daf281f8b504172" kind="function"><name>getName</name></member>
+    <member refid="class_developer_1ab1e964805d449751217f40e210596fc3" kind="function"><name>getNumber</name></member>
+    <member refid="class_developer_1a5ab8342af9b6352324787b66a1035c69" kind="function"><name>getDate</name></member>
+  </compound>
+  <compound refid="class_game_date" kind="class"><name>GameDate</name>
+    <member refid="class_game_date_1ad5dd851c8831cee4459a50e893b89938" kind="variable"><name>day</name></member>
+    <member refid="class_game_date_1ab1e375a13c1cad89b9b9c8ae5ebf3147" kind="variable"><name>month</name></member>
+    <member refid="class_game_date_1a1f2e174d97a49f53732788f485313716" kind="variable"><name>year</name></member>
+    <member refid="class_game_date_1ab0e226510ab6260cd438add7ad3b0e6f" kind="function"><name>GameDate</name></member>
+    <member refid="class_game_date_1ac1ae5749ab973a55a85a1fd69e04e003" kind="function"><name>GameDate</name></member>
+    <member refid="class_game_date_1a036e058a9f70791d229de1568e1a2c73" kind="function"><name>~GameDate</name></member>
+    <member refid="class_game_date_1a55608e9a69e32403ae008291681bbf59" kind="function"><name>setMonth</name></member>
+    <member refid="class_game_date_1aba5c6ab5a4f050ceb431fbcd037009d3" kind="function"><name>setDay</name></member>
+    <member refid="class_game_date_1adcaba92c4db1fa259a5d8ae9704064e5" kind="function"><name>setYear</name></member>
+    <member refid="class_game_date_1aa5f51d52c16e608253fd4c2762a1dfbb" kind="function"><name>getDay</name></member>
+    <member refid="class_game_date_1a2b8fba33da7e4820587a2e6ccc9411e0" kind="function"><name>getMonth</name></member>
+    <member refid="class_game_date_1ac996cd8d1fbd5a4ad9ede22a6b9aa7aa" kind="function"><name>getYear</name></member>
+    <member refid="class_game_date_1ae0829c804c22c72d1fe34080aed5cea3" kind="function"><name>print</name></member>
+    <member refid="class_game_date_1a46f2fcc90a57600fd45b783d9f8cd0c3" kind="function"><name>MDY</name></member>
+  </compound>
+  <compound refid="classmy___number_t" kind="class"><name>my_NumberT</name>
+    <member refid="classmy___number_t_1abdf8d164cd8c58d88dc094f1bbf01a6e" kind="variable"><name>value</name></member>
+    <member refid="classmy___number_t_1aae9f7035af1da340e063e9618dc642a2" kind="function"><name>my_NumberT</name></member>
+    <member refid="classmy___number_t_1a711259667444161bbdc149533e8dd2b8" kind="function"><name>my_NumberT</name></member>
+    <member refid="classmy___number_t_1ac987528d323d8a2ed013a200ddb13a5f" kind="function"><name>getValue</name></member>
+    <member refid="classmy___number_t_1a0df005c28c1b133efdf67283126fae17" kind="function"><name>setValue</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_actor_8h" kind="file"><name>Actor.h</name>
+    <member refid="_actor_8h_1af3dc1f4eaeaabc4cb2741c991bc47f3d" kind="function"><name>load</name></member>
+    <member refid="_actor_8h_1adb4b7104b34632fd046d9a534eced233" kind="function"><name>startMenu</name></member>
+    <member refid="_actor_8h_1a1fa62b46e875fff4cb5f5ea66f93a671" kind="function"><name>gameManager</name></member>
+    <member refid="_actor_8h_1a9421d775ae363a991198f68d5dbf7b19" kind="function"><name>startOption</name></member>
+    <member refid="_actor_8h_1ae37e254cdfd11133af9b06c52f393d6e" kind="function"><name>save</name></member>
+    <member refid="_actor_8h_1a0d2f7982285746f2c3086e8c3430c8aa" kind="function"><name>playerAttack</name></member>
+    <member refid="_actor_8h_1a6ed74ea3fa73fdffd3a3bc0199d51910" kind="function"><name>enemyAttack</name></member>
+    <member refid="_actor_8h_1a4fc2c0136e62f2b645a505e3bd2d75be" kind="function"><name>heal</name></member>
+    <member refid="_actor_8h_1a7fffa328a80d69f42c77deccb0c98a2d" kind="function"><name>smack</name></member>
+    <member refid="_actor_8h_1a81aa732ee1c52ed612ce57909dde6b75" kind="function"><name>block</name></member>
+    <member refid="_actor_8h_1a9f1fc8afafd91b62e36d45f690623ec3" kind="function"><name>battle</name></member>
+    <member refid="_actor_8h_1a7c6049047dd1945c70484e3e37847f7b" kind="function"><name>CRTR</name></member>
+  </compound>
+  <compound refid="_bonus_pt_8cpp" kind="file"><name>BonusPt.cpp</name>
+  </compound>
+  <compound refid="_bonus_pt_8h" kind="file"><name>BonusPt.h</name>
+  </compound>
+  <compound refid="_creator_8cpp" kind="file"><name>Creator.cpp</name>
+  </compound>
+  <compound refid="_creator_8h" kind="file"><name>Creator.h</name>
+  </compound>
+  <compound refid="_developer_8cpp" kind="file"><name>Developer.cpp</name>
+  </compound>
+  <compound refid="_developer_8h" kind="file"><name>Developer.h</name>
+  </compound>
+  <compound refid="_game_date_8cpp" kind="file"><name>GameDate.cpp</name>
+  </compound>
+  <compound refid="_game_date_8h" kind="file"><name>GameDate.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+    <member refid="main_8cpp_1adb4b7104b34632fd046d9a534eced233" kind="function"><name>startMenu</name></member>
+    <member refid="main_8cpp_1a1fa62b46e875fff4cb5f5ea66f93a671" kind="function"><name>gameManager</name></member>
+    <member refid="main_8cpp_1a9421d775ae363a991198f68d5dbf7b19" kind="function"><name>startOption</name></member>
+    <member refid="main_8cpp_1ae37e254cdfd11133af9b06c52f393d6e" kind="function"><name>save</name></member>
+    <member refid="main_8cpp_1af3dc1f4eaeaabc4cb2741c991bc47f3d" kind="function"><name>load</name></member>
+    <member refid="main_8cpp_1a7c6049047dd1945c70484e3e37847f7b" kind="function"><name>CRTR</name></member>
+    <member refid="main_8cpp_1a0d2f7982285746f2c3086e8c3430c8aa" kind="function"><name>playerAttack</name></member>
+    <member refid="main_8cpp_1ab340df13ba844ded5c4de5a3d9a7a3dc" kind="function"><name>enemyAttack</name></member>
+    <member refid="main_8cpp_1a81aa732ee1c52ed612ce57909dde6b75" kind="function"><name>block</name></member>
+    <member refid="main_8cpp_1a4fc2c0136e62f2b645a505e3bd2d75be" kind="function"><name>heal</name></member>
+    <member refid="main_8cpp_1a7fffa328a80d69f42c77deccb0c98a2d" kind="function"><name>smack</name></member>
+    <member refid="main_8cpp_1a6c34c0f60b1ebdcf3f8835bc5e6ca22c" kind="function"><name>enemyTurn</name></member>
+    <member refid="main_8cpp_1a8cea86ce6455bbc0fe2dd9491af1444e" kind="function"><name>playerTurn</name></member>
+    <member refid="main_8cpp_1a9f1fc8afafd91b62e36d45f690623ec3" kind="function"><name>battle</name></member>
+  </compound>
+  <compound refid="my___number_t_8h" kind="file"><name>my_NumberT.h</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_actor_8h" kind="file" language="C++">
+    <compoundname>Actor.h</compoundname>
+    <includes refid="_bonus_pt_8h" local="yes">BonusPt.h</includes>
+    <includes refid="_game_date_8h" local="yes">GameDate.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>GameDate.h</label>
+        <link refid="_game_date_8h"/>
+      </node>
+      <node id="1">
+        <label>BonusPt.h</label>
+        <link refid="_bonus_pt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="0">
+        <label>Actor.h</label>
+        <link refid="Actor.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_actor" prot="public">Actor</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_actor_8h_1af3dc1f4eaeaabc4cb2741c991bc47f3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void load</definition>
+        <argsstring>(GameDate &amp;date, Actor &amp;player, Actor &amp;enemy)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="class_game_date" kindref="compound">GameDate</ref> &amp;</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_actor" kindref="compound">Actor</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_actor" kindref="compound">Actor</ref> &amp;</type>
+          <declname>enemy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Actor.h" line="15" column="1" bodyfile="main.cpp" bodystart="243" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="_actor_8h_1adb4b7104b34632fd046d9a534eced233" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void startMenu</definition>
+        <argsstring>()</argsstring>
+        <name>startMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Actor.h" line="16" column="1" bodyfile="main.cpp" bodystart="30" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="_actor_8h_1a1fa62b46e875fff4cb5f5ea66f93a671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gameManager</definition>
+        <argsstring>()</argsstring>
+        <name>gameManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Actor.h" line="17" column="1" bodyfile="main.cpp" bodystart="44" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="_actor_8h_1a9421d775ae363a991198f68d5dbf7b19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void startOption</definition>
+        <argsstring>(string &amp;fullName, string &amp;classSelected, int &amp;health, int &amp;attack)</argsstring>
+        <name>startOption</name>
+        <param>
+          <type>string &amp;</type>
+          <declname>fullName</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>classSelected</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>health</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>attack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Actor.h" line="18" column="1" bodyfile="main.cpp" bodystart="116" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="_actor_8h_1ae37e254cdfd11133af9b06c52f393d6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void save</definition>
+        <argsstring>(GameDate &amp;date, string fullName, string classSelected, int health, int attack)</argsstring>
+        <name>save</name>
+        <param>
+          <type><ref refid="class_game_date" kindref="compound">GameDate</ref> &amp;</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>fullName</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>classSelected</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>health</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>attack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Actor.h" line="19" column="1" bodyfile="main.cpp" bodystart="184" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="_actor_8h_1a0d2f7982285746f2c3086e8c3430c8aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void playerAttack</definition>
+        <argsstring>(Actor &amp;target, Actor &amp;player)</argsstring>
+        <name>playerAttack</name>
+        <param>
+          <type><ref refid="struct_actor" kindref="compound">Actor</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_actor" kindref="compound">Actor</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Actor.h" line="20" column="1" bodyfile="main.cpp" bodystart="369" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="_actor_8h_1a6ed74ea3fa73fdffd3a3bc0199d51910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enemyAttack</definition>
+        <argsstring>(Actor &amp;player, Actor &amp;enemy)</argsstring>
+        <name>enemyAttack</name>
+        <param>
+          <type><ref refid="struct_actor" kindref="compound">Actor</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_actor" kindref="compound">Actor</ref> &amp;</type>
+          <declname>enemy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Actor.h" line="21" column="1" bodyfile="main.cpp" bodystart="432" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="_actor_8h_1a4fc2c0136e62f2b645a505e3bd2d75be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void heal</definition>
+        <argsstring>(Actor &amp;player)</argsstring>
+        <name>heal</name>
+        <param>
+          <type><ref refid="struct_actor" kindref="compound">Actor</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Actor.h" line="22" column="1" bodyfile="main.cpp" bodystart="483" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="_actor_8h_1a7fffa328a80d69f42c77deccb0c98a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void smack</definition>
+        <argsstring>(Actor &amp;player)</argsstring>
+        <name>smack</name>
+        <param>
+          <type><ref refid="struct_actor" kindref="compound">Actor</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Actor.h" line="23" column="1" bodyfile="main.cpp" bodystart="501" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="_actor_8h_1a81aa732ee1c52ed612ce57909dde6b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool block</definition>
+        <argsstring>(Actor &amp;player)</argsstring>
+        <name>block</name>
+        <param>
+          <type><ref refid="struct_actor" kindref="compound">Actor</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Actor.h" line="24" column="1" bodyfile="main.cpp" bodystart="462" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="_actor_8h_1a9f1fc8afafd91b62e36d45f690623ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool battle</definition>
+        <argsstring>(Actor &amp;player, Actor &amp;enemy)</argsstring>
+        <name>battle</name>
+        <param>
+          <type><ref refid="struct_actor" kindref="compound">Actor</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_actor" kindref="compound">Actor</ref> &amp;</type>
+          <declname>enemy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Actor.h" line="25" column="1" bodyfile="main.cpp" bodystart="585" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="_actor_8h_1a7c6049047dd1945c70484e3e37847f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CRTR</definition>
+        <argsstring>()</argsstring>
+        <name>CRTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Actor.h" line="26" column="1" bodyfile="main.cpp" bodystart="345" bodyend="368"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ACTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_bonus_pt_8h" kindref="compound">BonusPt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_date_8h" kindref="compound">GameDate.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="struct_actor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_actor" kindref="compound">Actor</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="struct_actor_1a5e634d4da03f27502b3acd6babb6c94b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_actor_1a5e634d4da03f27502b3acd6babb6c94b" kindref="member">attack</ref>;</highlight></codeline>
+<codeline lineno="10" refid="struct_actor_1a6932c660e6b6293a66b393c3c9cb151a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_actor_1a6932c660e6b6293a66b393c3c9cb151a" kindref="member">health</ref>;</highlight></codeline>
+<codeline lineno="11" refid="struct_actor_1a2cadac890a05336b48e5b247901f5b08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="struct_actor_1a2cadac890a05336b48e5b247901f5b08" kindref="member">fullName</ref>;</highlight></codeline>
+<codeline lineno="12" refid="struct_actor_1a7950bfa41c5bb7a4ae04c925f800271e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="struct_actor_1a7950bfa41c5bb7a4ae04c925f800271e" kindref="member">classSelected</ref>;</highlight></codeline>
+<codeline lineno="13" refid="struct_actor_1ab3bf461c752924b24b2b9a81250e5274" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_actor_1ab3bf461c752924b24b2b9a81250e5274" kindref="member">energy</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_actor_8h_1af3dc1f4eaeaabc4cb2741c991bc47f3d" kindref="member">load</ref>(<ref refid="class_game_date" kindref="compound">GameDate</ref><sp/>&amp;date,<ref refid="struct_actor" kindref="compound">Actor</ref><sp/>&amp;player,<sp/><ref refid="struct_actor" kindref="compound">Actor</ref><sp/>&amp;enemy);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_actor_8h_1adb4b7104b34632fd046d9a534eced233" kindref="member">startMenu</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_actor_8h_1a1fa62b46e875fff4cb5f5ea66f93a671" kindref="member">gameManager</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_actor_8h_1a9421d775ae363a991198f68d5dbf7b19" kindref="member">startOption</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;fullName,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;classSelected,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;health,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;attack);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_actor_8h_1ae37e254cdfd11133af9b06c52f393d6e" kindref="member">save</ref>(<ref refid="class_game_date" kindref="compound">GameDate</ref><sp/>&amp;date,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fullName,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>classSelected,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>health,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attack);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_actor_8h_1a0d2f7982285746f2c3086e8c3430c8aa" kindref="member">playerAttack</ref>(<ref refid="struct_actor" kindref="compound">Actor</ref><sp/>&amp;target,<sp/><ref refid="struct_actor" kindref="compound">Actor</ref><sp/>&amp;player);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_actor_8h_1a6ed74ea3fa73fdffd3a3bc0199d51910" kindref="member">enemyAttack</ref>(<ref refid="struct_actor" kindref="compound">Actor</ref><sp/>&amp;player,<sp/><ref refid="struct_actor" kindref="compound">Actor</ref><sp/>&amp;enemy);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_actor_8h_1a4fc2c0136e62f2b645a505e3bd2d75be" kindref="member">heal</ref>(<ref refid="struct_actor" kindref="compound">Actor</ref><sp/>&amp;player);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_actor_8h_1a7fffa328a80d69f42c77deccb0c98a2d" kindref="member">smack</ref>(<ref refid="struct_actor" kindref="compound">Actor</ref><sp/>&amp;player);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_actor_8h_1a81aa732ee1c52ed612ce57909dde6b75" kindref="member">block</ref>(<ref refid="struct_actor" kindref="compound">Actor</ref><sp/>&amp;player);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_actor_8h_1a9f1fc8afafd91b62e36d45f690623ec3" kindref="member">battle</ref>(<ref refid="struct_actor" kindref="compound">Actor</ref><sp/>&amp;player,<sp/><ref refid="struct_actor" kindref="compound">Actor</ref><sp/>&amp;enemy);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_actor_8h_1a7c6049047dd1945c70484e3e37847f7b" kindref="member">CRTR</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="Actor.h"/>
+  </compounddef>
+</doxygen>

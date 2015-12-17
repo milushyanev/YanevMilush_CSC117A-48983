@@ -1,0 +1,157 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\item 
+void \hyperlink{main_8cpp_adb4b7104b34632fd046d9a534eced233}{start\+Menu} ()
+\item 
+void \hyperlink{main_8cpp_a1fa62b46e875fff4cb5f5ea66f93a671}{game\+Manager} ()
+\item 
+void \hyperlink{main_8cpp_a9421d775ae363a991198f68d5dbf7b19}{start\+Option} (string \&full\+Name, string \&class\+Selected, int \&health, int \&attack)
+\item 
+void \hyperlink{main_8cpp_ae37e254cdfd11133af9b06c52f393d6e}{save} (\hyperlink{class_game_date}{Game\+Date} \&date, string full\+Name, string class\+Selected, int health, int attack)
+\item 
+void \hyperlink{main_8cpp_af3dc1f4eaeaabc4cb2741c991bc47f3d}{load} (\hyperlink{class_game_date}{Game\+Date} \&date, \hyperlink{struct_actor}{Actor} \&player, \hyperlink{struct_actor}{Actor} \&enemy)
+\item 
+void \hyperlink{main_8cpp_a7c6049047dd1945c70484e3e37847f7b}{C\+R\+T\+R} ()
+\item 
+void \hyperlink{main_8cpp_a0d2f7982285746f2c3086e8c3430c8aa}{player\+Attack} (\hyperlink{struct_actor}{Actor} \&target, \hyperlink{struct_actor}{Actor} \&player)
+\item 
+void \hyperlink{main_8cpp_ab340df13ba844ded5c4de5a3d9a7a3dc}{enemy\+Attack} (\hyperlink{struct_actor}{Actor} \&target, \hyperlink{struct_actor}{Actor} \&enemy)
+\item 
+bool \hyperlink{main_8cpp_a81aa732ee1c52ed612ce57909dde6b75}{block} (\hyperlink{struct_actor}{Actor} \&player)
+\item 
+void \hyperlink{main_8cpp_a4fc2c0136e62f2b645a505e3bd2d75be}{heal} (\hyperlink{struct_actor}{Actor} \&player)
+\item 
+void \hyperlink{main_8cpp_a7fffa328a80d69f42c77deccb0c98a2d}{smack} (\hyperlink{struct_actor}{Actor} \&player)
+\item 
+void \hyperlink{main_8cpp_a6c34c0f60b1ebdcf3f8835bc5e6ca22c}{enemy\+Turn} (\hyperlink{struct_actor}{Actor} \&target, \hyperlink{struct_actor}{Actor} \&source)
+\item 
+void \hyperlink{main_8cpp_a8cea86ce6455bbc0fe2dd9491af1444e}{player\+Turn} (\hyperlink{struct_actor}{Actor} \&target, \hyperlink{struct_actor}{Actor} \&source)
+\item 
+bool \hyperlink{main_8cpp_a9f1fc8afafd91b62e36d45f690623ec3}{battle} (\hyperlink{struct_actor}{Actor} \&player, \hyperlink{struct_actor}{Actor} \&enemy)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8cpp_a9f1fc8afafd91b62e36d45f690623ec3}{}\index{main.\+cpp@{main.\+cpp}!battle@{battle}}
+\index{battle@{battle}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{battle(\+Actor \&player, Actor \&enemy)}]{\setlength{\rightskip}{0pt plus 5cm}bool battle (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{player, }
+\item[{{\bf Actor} \&}]{enemy}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a9f1fc8afafd91b62e36d45f690623ec3}
+\hypertarget{main_8cpp_a81aa732ee1c52ed612ce57909dde6b75}{}\index{main.\+cpp@{main.\+cpp}!block@{block}}
+\index{block@{block}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{block(\+Actor \&player)}]{\setlength{\rightskip}{0pt plus 5cm}bool block (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{player}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a81aa732ee1c52ed612ce57909dde6b75}
+\hypertarget{main_8cpp_a7c6049047dd1945c70484e3e37847f7b}{}\index{main.\+cpp@{main.\+cpp}!C\+R\+T\+R@{C\+R\+T\+R}}
+\index{C\+R\+T\+R@{C\+R\+T\+R}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{C\+R\+T\+R()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+R\+T\+R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a7c6049047dd1945c70484e3e37847f7b}
+\hypertarget{main_8cpp_ab340df13ba844ded5c4de5a3d9a7a3dc}{}\index{main.\+cpp@{main.\+cpp}!enemy\+Attack@{enemy\+Attack}}
+\index{enemy\+Attack@{enemy\+Attack}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{enemy\+Attack(\+Actor \&target, Actor \&enemy)}]{\setlength{\rightskip}{0pt plus 5cm}void enemy\+Attack (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{target, }
+\item[{{\bf Actor} \&}]{enemy}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_ab340df13ba844ded5c4de5a3d9a7a3dc}
+\hypertarget{main_8cpp_a6c34c0f60b1ebdcf3f8835bc5e6ca22c}{}\index{main.\+cpp@{main.\+cpp}!enemy\+Turn@{enemy\+Turn}}
+\index{enemy\+Turn@{enemy\+Turn}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{enemy\+Turn(\+Actor \&target, Actor \&source)}]{\setlength{\rightskip}{0pt plus 5cm}void enemy\+Turn (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{target, }
+\item[{{\bf Actor} \&}]{source}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a6c34c0f60b1ebdcf3f8835bc5e6ca22c}
+\hypertarget{main_8cpp_a1fa62b46e875fff4cb5f5ea66f93a671}{}\index{main.\+cpp@{main.\+cpp}!game\+Manager@{game\+Manager}}
+\index{game\+Manager@{game\+Manager}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{game\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}void game\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a1fa62b46e875fff4cb5f5ea66f93a671}
+\hypertarget{main_8cpp_a4fc2c0136e62f2b645a505e3bd2d75be}{}\index{main.\+cpp@{main.\+cpp}!heal@{heal}}
+\index{heal@{heal}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{heal(\+Actor \&player)}]{\setlength{\rightskip}{0pt plus 5cm}void heal (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{player}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a4fc2c0136e62f2b645a505e3bd2d75be}
+\hypertarget{main_8cpp_af3dc1f4eaeaabc4cb2741c991bc47f3d}{}\index{main.\+cpp@{main.\+cpp}!load@{load}}
+\index{load@{load}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{load(\+Game\+Date \&date, Actor \&player, Actor \&enemy)}]{\setlength{\rightskip}{0pt plus 5cm}void load (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Date} \&}]{date, }
+\item[{{\bf Actor} \&}]{player, }
+\item[{{\bf Actor} \&}]{enemy}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_af3dc1f4eaeaabc4cb2741c991bc47f3d}
+\hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{main()}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+\hypertarget{main_8cpp_a0d2f7982285746f2c3086e8c3430c8aa}{}\index{main.\+cpp@{main.\+cpp}!player\+Attack@{player\+Attack}}
+\index{player\+Attack@{player\+Attack}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{player\+Attack(\+Actor \&target, Actor \&player)}]{\setlength{\rightskip}{0pt plus 5cm}void player\+Attack (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{target, }
+\item[{{\bf Actor} \&}]{player}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a0d2f7982285746f2c3086e8c3430c8aa}
+\hypertarget{main_8cpp_a8cea86ce6455bbc0fe2dd9491af1444e}{}\index{main.\+cpp@{main.\+cpp}!player\+Turn@{player\+Turn}}
+\index{player\+Turn@{player\+Turn}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{player\+Turn(\+Actor \&target, Actor \&source)}]{\setlength{\rightskip}{0pt plus 5cm}void player\+Turn (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{target, }
+\item[{{\bf Actor} \&}]{source}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a8cea86ce6455bbc0fe2dd9491af1444e}
+\hypertarget{main_8cpp_ae37e254cdfd11133af9b06c52f393d6e}{}\index{main.\+cpp@{main.\+cpp}!save@{save}}
+\index{save@{save}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{save(\+Game\+Date \&date, string full\+Name, string class\+Selected, int health, int attack)}]{\setlength{\rightskip}{0pt plus 5cm}void save (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Date} \&}]{date, }
+\item[{string}]{full\+Name, }
+\item[{string}]{class\+Selected, }
+\item[{int}]{health, }
+\item[{int}]{attack}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_ae37e254cdfd11133af9b06c52f393d6e}
+\hypertarget{main_8cpp_a7fffa328a80d69f42c77deccb0c98a2d}{}\index{main.\+cpp@{main.\+cpp}!smack@{smack}}
+\index{smack@{smack}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{smack(\+Actor \&player)}]{\setlength{\rightskip}{0pt plus 5cm}void smack (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{player}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a7fffa328a80d69f42c77deccb0c98a2d}
+\hypertarget{main_8cpp_adb4b7104b34632fd046d9a534eced233}{}\index{main.\+cpp@{main.\+cpp}!start\+Menu@{start\+Menu}}
+\index{start\+Menu@{start\+Menu}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{start\+Menu()}]{\setlength{\rightskip}{0pt plus 5cm}void start\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_adb4b7104b34632fd046d9a534eced233}
+\hypertarget{main_8cpp_a9421d775ae363a991198f68d5dbf7b19}{}\index{main.\+cpp@{main.\+cpp}!start\+Option@{start\+Option}}
+\index{start\+Option@{start\+Option}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{start\+Option(string \&full\+Name, string \&class\+Selected, int \&health, int \&attack)}]{\setlength{\rightskip}{0pt plus 5cm}void start\+Option (
+\begin{DoxyParamCaption}
+\item[{string \&}]{full\+Name, }
+\item[{string \&}]{class\+Selected, }
+\item[{int \&}]{health, }
+\item[{int \&}]{attack}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a9421d775ae363a991198f68d5dbf7b19}

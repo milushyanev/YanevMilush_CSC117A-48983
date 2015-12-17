@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_developer_8h" kind="file" language="C++">
+    <compoundname>Developer.h</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="my___number_t_8h" local="yes">my_NumberT.h</includes>
+    <includedby refid="_creator_8h" local="yes">Creator.h</includedby>
+    <includedby refid="_developer_8cpp" local="yes">Developer.cpp</includedby>
+    <incdepgraph>
+      <node id="37">
+        <label>string</label>
+      </node>
+      <node id="38">
+        <label>my_NumberT.h</label>
+        <link refid="my___number_t_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>iostream</label>
+      </node>
+      <node id="36">
+        <label>Developer.h</label>
+        <link refid="Developer.h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="43">
+        <label>Developer.cpp</label>
+        <link refid="_developer_8cpp"/>
+      </node>
+      <node id="41">
+        <label>Creator.h</label>
+        <link refid="_creator_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>Creator.cpp</label>
+        <link refid="_creator_8cpp"/>
+      </node>
+      <node id="40">
+        <label>Developer.h</label>
+        <link refid="Developer.h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_developer" prot="public">Developer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>DEVELOPER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVELOPER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="my___number_t_8h" kindref="compound">my_NumberT.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//using<sp/>also<sp/>a<sp/>Template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_developer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_developer" kindref="compound">Developer</ref>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="class_developer_1a0398c537a81a118c0cebd64e453554a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_developer_1a0398c537a81a118c0cebd64e453554a8" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_developer_1ad157908ba8bd6ac6b16c8e28502953be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_developer_1ad157908ba8bd6ac6b16c8e28502953be" kindref="member">date</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//template<sp/>declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_developer_1af8a79869e44207cd6d3ef176cff2f2d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmy___number_t" kindref="compound">my_NumberT&lt;int&gt;</ref><sp/><ref refid="class_developer_1af8a79869e44207cd6d3ef176cff2f2d1" kindref="member">number</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_developer_1adcd646e88c19d2570f285715076db8bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmy___number_t" kindref="compound">my_NumberT&lt;float&gt;</ref><sp/><ref refid="class_developer_1adcd646e88c19d2570f285715076db8bb" kindref="member">salary</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_developer" kindref="compound">Developer</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_developer" kindref="compound">Developer</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_developer" kindref="compound">Developer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_developer" kindref="compound">Developer</ref>&amp;<sp/>orig);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_developer" kindref="compound">Developer</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setName(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setNumber(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setDate(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>getName();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getNumber();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>getDate();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Developer.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_bonus" kind="class" language="C++" prot="public">
+    <compoundname>Bonus</compoundname>
+    <includes refid="_bonus_pt_8h" local="no">BonusPt.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bonus_1a84e5e1deb2a89c40583d2f352260d5df" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Bonus::number</definition>
+        <argsstring></argsstring>
+        <name>number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BonusPt.h" line="11" column="1" bodyfile="BonusPt.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bonus_1a219d8d0675a4a3af33181693def6e56e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Bonus::chance</definition>
+        <argsstring></argsstring>
+        <name>chance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BonusPt.h" line="11" column="1" bodyfile="BonusPt.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bonus_1aa28ec1e2467dbe7eb5dbcbf1952451ed" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Bonus::mBonus</definition>
+        <argsstring></argsstring>
+        <name>mBonus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BonusPt.h" line="11" column="1" bodyfile="BonusPt.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bonus_1a005571f0961a2e0f1af2befc35d804cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bonus::Bonus</definition>
+        <argsstring>()</argsstring>
+        <name>Bonus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BonusPt.h" line="14" column="1" bodyfile="BonusPt.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bonus_1ace96cd91925b1f65b2c8596930fed6f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bonus::~Bonus</definition>
+        <argsstring>()</argsstring>
+        <name>~Bonus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BonusPt.h" line="17" column="1" bodyfile="BonusPt.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bonus_1a9b49303ba2ac90ed51903d720c254d16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bonus::setNumber</definition>
+        <argsstring>()</argsstring>
+        <name>setNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BonusPt.h" line="22" column="1" bodyfile="BonusPt.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bonus_1a8410340d40b2c2f94e6975da25715615" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bonus::getNumber</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BonusPt.h" line="23" column="1" bodyfile="BonusPt.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bonus_1a20eafd1e0dc632fbbd86d860822e95bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bonus::getBonus</definition>
+        <argsstring>() const </argsstring>
+        <name>getBonus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BonusPt.h" line="24" column="1" bodyfile="BonusPt.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bonus_1aaa4cc8b64910ad7fac1a0e2408a26338" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bonus::getMBonus</definition>
+        <argsstring>() const </argsstring>
+        <name>getMBonus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BonusPt.h" line="25" column="1" bodyfile="BonusPt.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_bonus_1aad2515d0e2e8a4e0c6fcbbd01c167712" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bonus::BonH</definition>
+        <argsstring>()</argsstring>
+        <name>BonH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BonusPt.h" line="20" column="1" bodyfile="BonusPt.cpp" bodystart="19" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bonus_1ae2f51b8407ff820aa8a0a180d2158554" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bonus::AI_Bns</definition>
+        <argsstring>()</argsstring>
+        <name>AI_Bns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BonusPt.h" line="21" column="1" bodyfile="BonusPt.cpp" bodystart="66" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="BonusPt.h" line="9" column="1" bodyfile="BonusPt.h" bodystart="8" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_bonus_1ae2f51b8407ff820aa8a0a180d2158554" prot="public" virt="non-virtual"><scope>Bonus</scope><name>AI_Bns</name></member>
+      <member refid="class_bonus_1aad2515d0e2e8a4e0c6fcbbd01c167712" prot="public" virt="non-virtual"><scope>Bonus</scope><name>BonH</name></member>
+      <member refid="class_bonus_1a005571f0961a2e0f1af2befc35d804cf" prot="public" virt="non-virtual"><scope>Bonus</scope><name>Bonus</name></member>
+      <member refid="class_bonus_1a219d8d0675a4a3af33181693def6e56e" prot="private" virt="non-virtual"><scope>Bonus</scope><name>chance</name></member>
+      <member refid="class_bonus_1a20eafd1e0dc632fbbd86d860822e95bf" prot="public" virt="non-virtual"><scope>Bonus</scope><name>getBonus</name></member>
+      <member refid="class_bonus_1aaa4cc8b64910ad7fac1a0e2408a26338" prot="public" virt="non-virtual"><scope>Bonus</scope><name>getMBonus</name></member>
+      <member refid="class_bonus_1a8410340d40b2c2f94e6975da25715615" prot="public" virt="non-virtual"><scope>Bonus</scope><name>getNumber</name></member>
+      <member refid="class_bonus_1aa28ec1e2467dbe7eb5dbcbf1952451ed" prot="private" virt="non-virtual"><scope>Bonus</scope><name>mBonus</name></member>
+      <member refid="class_bonus_1a84e5e1deb2a89c40583d2f352260d5df" prot="private" virt="non-virtual"><scope>Bonus</scope><name>number</name></member>
+      <member refid="class_bonus_1a9b49303ba2ac90ed51903d720c254d16" prot="public" virt="non-virtual"><scope>Bonus</scope><name>setNumber</name></member>
+      <member refid="class_bonus_1ace96cd91925b1f65b2c8596930fed6f5" prot="public" virt="non-virtual"><scope>Bonus</scope><name>~Bonus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

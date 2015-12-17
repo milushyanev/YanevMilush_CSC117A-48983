@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_developer_8cpp" kind="file" language="C++">
+    <compoundname>Developer.cpp</compoundname>
+    <includes refid="_developer_8h" local="yes">Developer.h</includes>
+    <includes refid="my___number_t_8h" local="yes">my_NumberT.h</includes>
+    <incdepgraph>
+      <node id="30">
+        <label>Developer.cpp</label>
+        <link refid="Developer.cpp"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>string</label>
+      </node>
+      <node id="33">
+        <label>my_NumberT.h</label>
+        <link refid="my___number_t_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>iostream</label>
+      </node>
+      <node id="31">
+        <label>Developer.h</label>
+        <link refid="_developer_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_developer_8h" kindref="compound">Developer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="my___number_t_8h" kindref="compound">my_NumberT.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//set<sp/>default<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="class_developer_1a1acf937b03598b68b93c010bfc90f702" kindref="member">Developer::Developer</ref>()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_developer_1a0398c537a81a118c0cebd64e453554a8" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;John<sp/>Smith&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_developer_1af8a79869e44207cd6d3ef176cff2f2d1" kindref="member">number</ref><sp/>=<sp/>000;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_developer_1ad157908ba8bd6ac6b16c8e28502953be" kindref="member">date</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;1/1/2000&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><ref refid="class_developer_1a1acf937b03598b68b93c010bfc90f702" kindref="member">Developer::Developer</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_developer_1a0398c537a81a118c0cebd64e453554a8" kindref="member">name</ref><sp/>=<sp/>n;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_developer_1af8a79869e44207cd6d3ef176cff2f2d1" kindref="member">number</ref><sp/>=<sp/>num;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_developer_1ad157908ba8bd6ac6b16c8e28502953be" kindref="member">date</ref><sp/>=<sp/>d;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="class_developer_1a1acf937b03598b68b93c010bfc90f702" kindref="member">Developer::Developer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_developer" kindref="compound">Developer</ref>&amp;<sp/>orig)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//alocate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="class_developer_1a3a358890cdc55c7c473bbe0865ca0dde" kindref="member">Developer::~Developer</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//call<sp/>functios<sp/>for<sp/>certain<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_developer_1aed0b441a49c60fcfbcdeb730bc6efb79" kindref="member">Developer::setName</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_developer_1a0398c537a81a118c0cebd64e453554a8" kindref="member">name</ref><sp/>=<sp/>n;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_developer_1afa96e363d27b88c0c54ebffadef4f728" kindref="member">Developer::setNumber</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_developer_1af8a79869e44207cd6d3ef176cff2f2d1" kindref="member">number</ref><sp/>=<sp/>num;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_developer_1aebac796aa948255e4ca15c8fbbc0d010" kindref="member">Developer::setDate</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_developer_1ad157908ba8bd6ac6b16c8e28502953be" kindref="member">date</ref><sp/>=<sp/>d;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//get<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_developer_1abcaa88f55cd1dbd58daf281f8b504172" kindref="member">Developer::getName</ref>()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_developer_1a0398c537a81a118c0cebd64e453554a8" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_developer_1ab1e964805d449751217f40e210596fc3" kindref="member">Developer::getNumber</ref>()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_developer_1af8a79869e44207cd6d3ef176cff2f2d1" kindref="member">number</ref>.<ref refid="classmy___number_t_1ac987528d323d8a2ed013a200ddb13a5f" kindref="member">getValue</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_developer_1a5ab8342af9b6352324787b66a1035c69" kindref="member">Developer::getDate</ref>()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_developer_1ad157908ba8bd6ac6b16c8e28502953be" kindref="member">date</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Developer.cpp"/>
+  </compounddef>
+</doxygen>

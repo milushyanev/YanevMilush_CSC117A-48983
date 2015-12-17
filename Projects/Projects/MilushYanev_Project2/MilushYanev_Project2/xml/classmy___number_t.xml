@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="classmy___number_t" kind="class" language="C++" prot="public">
+    <compoundname>my_NumberT</compoundname>
+    <includes refid="my___number_t_8h" local="no">my_NumberT.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmy___number_t_1abdf8d164cd8c58d88dc094f1bbf01a6e" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T my_NumberT&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_NumberT.h" line="13" column="1" bodyfile="my_NumberT.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmy___number_t_1aae9f7035af1da340e063e9618dc642a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>my_NumberT&lt; T &gt;::my_NumberT</definition>
+        <argsstring>()</argsstring>
+        <name>my_NumberT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_NumberT.h" line="16" column="1" bodyfile="my_NumberT.h" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classmy___number_t_1a711259667444161bbdc149533e8dd2b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>my_NumberT&lt; T &gt;::my_NumberT</definition>
+        <argsstring>(T)</argsstring>
+        <name>my_NumberT</name>
+        <param>
+          <type>T</type>
+          <defname>_value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_NumberT.h" line="17" column="1" bodyfile="my_NumberT.h" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classmy___number_t_1ac987528d323d8a2ed013a200ddb13a5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T my_NumberT&lt; T &gt;::getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_NumberT.h" line="18" column="1" bodyfile="my_NumberT.h" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classmy___number_t_1a0df005c28c1b133efdf67283126fae17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_NumberT&lt; T &gt;::setValue</definition>
+        <argsstring>(T)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>T</type>
+          <defname>_value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_NumberT.h" line="19" column="1" bodyfile="my_NumberT.h" bodystart="28" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="my_NumberT.h" line="10" column="1" bodyfile="my_NumberT.h" bodystart="9" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classmy___number_t_1ac987528d323d8a2ed013a200ddb13a5f" prot="public" virt="non-virtual"><scope>my_NumberT</scope><name>getValue</name></member>
+      <member refid="classmy___number_t_1aae9f7035af1da340e063e9618dc642a2" prot="public" virt="non-virtual"><scope>my_NumberT</scope><name>my_NumberT</name></member>
+      <member refid="classmy___number_t_1a711259667444161bbdc149533e8dd2b8" prot="public" virt="non-virtual"><scope>my_NumberT</scope><name>my_NumberT</name></member>
+      <member refid="classmy___number_t_1a0df005c28c1b133efdf67283126fae17" prot="public" virt="non-virtual"><scope>my_NumberT</scope><name>setValue</name></member>
+      <member refid="classmy___number_t_1abdf8d164cd8c58d88dc094f1bbf01a6e" prot="private" virt="non-virtual"><scope>my_NumberT</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

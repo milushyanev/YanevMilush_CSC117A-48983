@@ -1,0 +1,233 @@
+.TH "MilushYanev_Project2/html/navtree.js" 3 "Tue Dec 15 2015" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MilushYanev_Project2/html/navtree.js \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "function \fBgetData\fP (varName)"
+.br
+.ti -1c
+.RI "function \fBstripPath\fP (uri)"
+.br
+.ti -1c
+.RI "function \fBstripPath2\fP (uri)"
+.br
+.ti -1c
+.RI "function \fBhashValue\fP ()"
+.br
+.ti -1c
+.RI "function \fBhashUrl\fP ()"
+.br
+.ti -1c
+.RI "function \fBpathName\fP ()"
+.br
+.ti -1c
+.RI "function \fBlocalStorageSupported\fP ()"
+.br
+.ti -1c
+.RI "function \fBstoreLink\fP (link)"
+.br
+.ti -1c
+.RI "function \fBdeleteLink\fP ()"
+.br
+.ti -1c
+.RI "function \fBcachedLink\fP ()"
+.br
+.ti -1c
+.RI "function \fBgetScript\fP (scriptName, func, show)"
+.br
+.ti -1c
+.RI "function \fBcreateIndent\fP (o, domNode, node, level)"
+.br
+.ti -1c
+.RI "function \fBgotoAnchor\fP (anchor, aname, updateLocation)"
+.br
+.ti -1c
+.RI "function \fBnewNode\fP (o, po, text, link, childrenData, lastNode)"
+.br
+.ti -1c
+.RI "function \fBshowRoot\fP ()"
+.br
+.ti -1c
+.RI "function \fBexpandNode\fP (o, node, imm, \fBshowRoot\fP)"
+.br
+.ti -1c
+.RI "function \fBglowEffect\fP (n, duration)"
+.br
+.ti -1c
+.RI "function \fBhighlightAnchor\fP ()"
+.br
+.ti -1c
+.RI "function \fBselectAndHighlight\fP (hash, n)"
+.br
+.ti -1c
+.RI "function \fBshowNode\fP (o, node, index, hash)"
+.br
+.ti -1c
+.RI "function \fBremoveToInsertLater\fP (element)"
+.br
+.ti -1c
+.RI "function \fBgetNode\fP (o, po)"
+.br
+.ti -1c
+.RI "function \fBgotoNode\fP (o, subIndex, root, hash, relpath)"
+.br
+.ti -1c
+.RI "function \fBnavTo\fP (o, root, hash, relpath)"
+.br
+.ti -1c
+.RI "function \fBshowSyncOff\fP (n, relpath)"
+.br
+.ti -1c
+.RI "function \fBshowSyncOn\fP (n, relpath)"
+.br
+.ti -1c
+.RI "function \fBtoggleSyncButton\fP (relpath)"
+.br
+.ti -1c
+.RI "function \fBinitNavTree\fP (toroot, relpath)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "var \fBnavTreeSubIndices\fP = new Array()"
+.br
+.ti -1c
+.RI "var \fBanimationInProgress\fP = false"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "function cachedLink ()"
+
+.PP
+Definition at line 63 of file navtree\&.js\&.
+.SS "function createIndent ( o,  domNode,  node,  level)"
+
+.PP
+Definition at line 91 of file navtree\&.js\&.
+.SS "function deleteLink ()"
+
+.PP
+Definition at line 56 of file navtree\&.js\&.
+.SS "function expandNode ( o,  node,  imm,  showRoot)"
+
+.PP
+Definition at line 253 of file navtree\&.js\&.
+.SS "function getData ( varName)"
+
+.PP
+Definition at line 3 of file navtree\&.js\&.
+.SS "function getNode ( o,  po)"
+
+.PP
+Definition at line 384 of file navtree\&.js\&.
+.SS "function getScript ( scriptName,  func,  show)"
+
+.PP
+Definition at line 72 of file navtree\&.js\&.
+.SS "function glowEffect ( n,  duration)"
+
+.PP
+Definition at line 281 of file navtree\&.js\&.
+.SS "function gotoAnchor ( anchor,  aname,  updateLocation)"
+
+.PP
+Definition at line 129 of file navtree\&.js\&.
+.SS "function gotoNode ( o,  subIndex,  root,  hash,  relpath)"
+
+.PP
+Definition at line 397 of file navtree\&.js\&.
+.SS "function hashUrl ()"
+
+.PP
+Definition at line 28 of file navtree\&.js\&.
+.SS "function hashValue ()"
+
+.PP
+Definition at line 23 of file navtree\&.js\&.
+.SS "function highlightAnchor ()"
+
+.PP
+Definition at line 288 of file navtree\&.js\&.
+.SS "function initNavTree ( toroot,  relpath)"
+
+.PP
+Definition at line 466 of file navtree\&.js\&.
+.SS "function localStorageSupported ()"
+
+.PP
+Definition at line 38 of file navtree\&.js\&.
+.SS "function navTo ( o,  root,  hash,  relpath)"
+
+.PP
+Definition at line 412 of file navtree\&.js\&.
+.SS "function newNode ( o,  po,  text,  link,  childrenData,  lastNode)"
+
+.PP
+Definition at line 157 of file navtree\&.js\&.
+.SS "function pathName ()"
+
+.PP
+Definition at line 33 of file navtree\&.js\&.
+.SS "function removeToInsertLater ( element)"
+
+.PP
+Definition at line 371 of file navtree\&.js\&.
+.SS "function selectAndHighlight ( hash,  n)"
+
+.PP
+Definition at line 307 of file navtree\&.js\&.
+.SS "function showNode ( o,  node,  index,  hash)"
+
+.PP
+Definition at line 330 of file navtree\&.js\&.
+.SS "function showRoot ()"
+
+.PP
+Definition at line 238 of file navtree\&.js\&.
+.SS "function showSyncOff ( n,  relpath)"
+
+.PP
+Definition at line 442 of file navtree\&.js\&.
+.SS "function showSyncOn ( n,  relpath)"
+
+.PP
+Definition at line 447 of file navtree\&.js\&.
+.SS "function storeLink ( link)"
+
+.PP
+Definition at line 49 of file navtree\&.js\&.
+.SS "function stripPath ( uri)"
+
+.PP
+Definition at line 10 of file navtree\&.js\&.
+.SS "function stripPath2 ( uri)"
+
+.PP
+Definition at line 15 of file navtree\&.js\&.
+.SS "function toggleSyncButton ( relpath)"
+
+.PP
+Definition at line 452 of file navtree\&.js\&.
+.SH "Variable Documentation"
+.PP 
+.SS "var animationInProgress = false"
+
+.PP
+Definition at line 127 of file navtree\&.js\&.
+.SS "var navTreeSubIndices = new Array()"
+
+.PP
+Definition at line 1 of file navtree\&.js\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

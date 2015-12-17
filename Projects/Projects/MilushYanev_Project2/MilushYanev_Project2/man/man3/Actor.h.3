@@ -1,0 +1,89 @@
+.TH "Actor.h" 3 "Tue Dec 15 2015" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Actor.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'BonusPt\&.h'\fP
+.br
+\fC#include 'GameDate\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBActor\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBload\fP (\fBGameDate\fP &date, \fBActor\fP &player, \fBActor\fP &enemy)"
+.br
+.ti -1c
+.RI "void \fBstartMenu\fP ()"
+.br
+.ti -1c
+.RI "void \fBgameManager\fP ()"
+.br
+.ti -1c
+.RI "void \fBstartOption\fP (string &fullName, string &classSelected, int &health, int &attack)"
+.br
+.ti -1c
+.RI "void \fBsave\fP (\fBGameDate\fP &date, string fullName, string classSelected, int health, int attack)"
+.br
+.ti -1c
+.RI "void \fBplayerAttack\fP (\fBActor\fP &target, \fBActor\fP &player)"
+.br
+.ti -1c
+.RI "void \fBenemyAttack\fP (\fBActor\fP &player, \fBActor\fP &enemy)"
+.br
+.ti -1c
+.RI "void \fBheal\fP (\fBActor\fP &player)"
+.br
+.ti -1c
+.RI "void \fBsmack\fP (\fBActor\fP &player)"
+.br
+.ti -1c
+.RI "bool \fBblock\fP (\fBActor\fP &player)"
+.br
+.ti -1c
+.RI "bool \fBbattle\fP (\fBActor\fP &player, \fBActor\fP &enemy)"
+.br
+.ti -1c
+.RI "void \fBCRTR\fP ()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "bool battle (\fBActor\fP & player, \fBActor\fP & enemy)"
+
+.SS "bool block (\fBActor\fP & player)"
+
+.SS "void CRTR ()"
+
+.SS "void enemyAttack (\fBActor\fP & player, \fBActor\fP & enemy)"
+
+.SS "void gameManager ()"
+
+.SS "void heal (\fBActor\fP & player)"
+
+.SS "void load (\fBGameDate\fP & date, \fBActor\fP & player, \fBActor\fP & enemy)"
+
+.SS "void playerAttack (\fBActor\fP & target, \fBActor\fP & player)"
+
+.SS "void save (\fBGameDate\fP & date, string fullName, string classSelected, int health, int attack)"
+
+.SS "void smack (\fBActor\fP & player)"
+
+.SS "void startMenu ()"
+
+.SS "void startOption (string & fullName, string & classSelected, int & health, int & attack)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

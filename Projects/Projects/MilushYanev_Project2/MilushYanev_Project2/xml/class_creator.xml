@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_creator" kind="class" language="C++" prot="public">
+    <compoundname>Creator</compoundname>
+    <basecompoundref refid="class_developer" prot="public" virt="non-virtual">Developer</basecompoundref>
+    <includes refid="_creator_8h" local="no">Creator.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_creator_1af79f8b6ef06ca851d7abc1e281527507" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Creator::day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Creator.h" line="12" column="1" bodyfile="Creator.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_creator_1a081986ae5392c432fce444ccad8f623e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Creator::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Creator.h" line="13" column="1" bodyfile="Creator.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_creator_1abdde228294a78387338fe874accd629b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Creator::Creator</definition>
+        <argsstring>()</argsstring>
+        <name>Creator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Creator.h" line="15" column="1" bodyfile="Creator.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_creator_1af8ecf377073058ea5156afa2e79f901e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Creator::~Creator</definition>
+        <argsstring>()</argsstring>
+        <name>~Creator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Creator.h" line="16" column="1" bodyfile="Creator.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_creator_1acd24fa39930d724d13a21f30ec423e4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Creator::setDay</definition>
+        <argsstring>(int)</argsstring>
+        <name>setDay</name>
+        <param>
+          <type>int</type>
+          <defname>d</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Creator.h" line="17" column="1" bodyfile="Creator.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_creator_1a08a3e34a0fd9f2f0005f1fefd05f4f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Creator::setLevel</definition>
+        <argsstring>(int)</argsstring>
+        <name>setLevel</name>
+        <param>
+          <type>int</type>
+          <defname>l</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Creator.h" line="18" column="1" bodyfile="Creator.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_creator_1a154311115ed492e31eec167458a6ec11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Creator::getDay</definition>
+        <argsstring>()</argsstring>
+        <name>getDay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Creator.h" line="19" column="1" bodyfile="Creator.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_creator_1aa8247cf632e973741f6905a1030b9306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Creator::getLevel</definition>
+        <argsstring>()</argsstring>
+        <name>getLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Creator.h" line="20" column="1" bodyfile="Creator.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Creator</label>
+        <link refid="class_creator"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Developer</label>
+        <link refid="class_developer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>my_NumberT&lt; int &gt;</label>
+        <link refid="classmy___number_t"/>
+      </node>
+      <node id="6">
+        <label>Creator</label>
+        <link refid="class_creator"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>my_NumberT&lt; float &gt;</label>
+        <link refid="classmy___number_t"/>
+      </node>
+      <node id="7">
+        <label>Developer</label>
+        <link refid="class_developer"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>salary</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>number</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Creator.h" line="10" column="1" bodyfile="Creator.h" bodystart="8" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_creator_1abdde228294a78387338fe874accd629b" prot="public" virt="non-virtual"><scope>Creator</scope><name>Creator</name></member>
+      <member refid="class_developer_1ad157908ba8bd6ac6b16c8e28502953be" prot="protected" virt="non-virtual"><scope>Creator</scope><name>date</name></member>
+      <member refid="class_creator_1af79f8b6ef06ca851d7abc1e281527507" prot="private" virt="non-virtual"><scope>Creator</scope><name>day</name></member>
+      <member refid="class_developer_1a1acf937b03598b68b93c010bfc90f702" prot="public" virt="non-virtual"><scope>Creator</scope><name>Developer</name></member>
+      <member refid="class_developer_1a24c1cde234cb63807179251c8516f69e" prot="public" virt="non-virtual"><scope>Creator</scope><name>Developer</name></member>
+      <member refid="class_developer_1a70d27630049849deaf3fbc8fab301908" prot="public" virt="non-virtual"><scope>Creator</scope><name>Developer</name></member>
+      <member refid="class_developer_1a5ab8342af9b6352324787b66a1035c69" prot="public" virt="non-virtual"><scope>Creator</scope><name>getDate</name></member>
+      <member refid="class_creator_1a154311115ed492e31eec167458a6ec11" prot="public" virt="non-virtual"><scope>Creator</scope><name>getDay</name></member>
+      <member refid="class_creator_1aa8247cf632e973741f6905a1030b9306" prot="public" virt="non-virtual"><scope>Creator</scope><name>getLevel</name></member>
+      <member refid="class_developer_1abcaa88f55cd1dbd58daf281f8b504172" prot="public" virt="non-virtual"><scope>Creator</scope><name>getName</name></member>
+      <member refid="class_developer_1ab1e964805d449751217f40e210596fc3" prot="public" virt="non-virtual"><scope>Creator</scope><name>getNumber</name></member>
+      <member refid="class_creator_1a081986ae5392c432fce444ccad8f623e" prot="private" virt="non-virtual"><scope>Creator</scope><name>level</name></member>
+      <member refid="class_developer_1a0398c537a81a118c0cebd64e453554a8" prot="protected" virt="non-virtual"><scope>Creator</scope><name>name</name></member>
+      <member refid="class_developer_1af8a79869e44207cd6d3ef176cff2f2d1" prot="protected" virt="non-virtual"><scope>Creator</scope><name>number</name></member>
+      <member refid="class_developer_1adcd646e88c19d2570f285715076db8bb" prot="protected" virt="non-virtual"><scope>Creator</scope><name>salary</name></member>
+      <member refid="class_developer_1aebac796aa948255e4ca15c8fbbc0d010" prot="public" virt="non-virtual"><scope>Creator</scope><name>setDate</name></member>
+      <member refid="class_creator_1acd24fa39930d724d13a21f30ec423e4f" prot="public" virt="non-virtual"><scope>Creator</scope><name>setDay</name></member>
+      <member refid="class_creator_1a08a3e34a0fd9f2f0005f1fefd05f4f96" prot="public" virt="non-virtual"><scope>Creator</scope><name>setLevel</name></member>
+      <member refid="class_developer_1aed0b441a49c60fcfbcdeb730bc6efb79" prot="public" virt="non-virtual"><scope>Creator</scope><name>setName</name></member>
+      <member refid="class_developer_1afa96e363d27b88c0c54ebffadef4f728" prot="public" virt="non-virtual"><scope>Creator</scope><name>setNumber</name></member>
+      <member refid="class_creator_1af8ecf377073058ea5156afa2e79f901e" prot="public" virt="non-virtual"><scope>Creator</scope><name>~Creator</name></member>
+      <member refid="class_developer_1a3a358890cdc55c7c473bbe0865ca0dde" prot="public" virt="non-virtual"><scope>Creator</scope><name>~Developer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

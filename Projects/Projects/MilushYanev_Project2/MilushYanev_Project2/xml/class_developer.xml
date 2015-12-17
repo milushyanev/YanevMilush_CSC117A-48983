@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_developer" kind="class" language="C++" prot="public">
+    <compoundname>Developer</compoundname>
+    <derivedcompoundref refid="class_creator" prot="public" virt="non-virtual">Creator</derivedcompoundref>
+    <includes refid="_developer_8h" local="no">Developer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_developer_1a0398c537a81a118c0cebd64e453554a8" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Developer::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="11" column="1" bodyfile="Developer.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_developer_1ad157908ba8bd6ac6b16c8e28502953be" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Developer::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="12" column="1" bodyfile="Developer.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_developer_1af8a79869e44207cd6d3ef176cff2f2d1" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmy___number_t" kindref="compound">my_NumberT</ref>&lt; int &gt;</type>
+        <definition>my_NumberT&lt;int&gt; Developer::number</definition>
+        <argsstring></argsstring>
+        <name>number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="14" column="1" bodyfile="Developer.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_developer_1adcd646e88c19d2570f285715076db8bb" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmy___number_t" kindref="compound">my_NumberT</ref>&lt; float &gt;</type>
+        <definition>my_NumberT&lt;float&gt; Developer::salary</definition>
+        <argsstring></argsstring>
+        <name>salary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="15" column="1" bodyfile="Developer.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_developer_1a1acf937b03598b68b93c010bfc90f702" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Developer::Developer</definition>
+        <argsstring>()</argsstring>
+        <name>Developer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="18" column="1" bodyfile="Developer.cpp" bodystart="5" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_developer_1a24c1cde234cb63807179251c8516f69e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Developer::Developer</definition>
+        <argsstring>(string, int, string)</argsstring>
+        <name>Developer</name>
+        <param>
+          <type>string</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>num</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>d</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="19" column="1" bodyfile="Developer.cpp" bodystart="11" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_developer_1a70d27630049849deaf3fbc8fab301908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Developer::Developer</definition>
+        <argsstring>(const Developer &amp;orig)</argsstring>
+        <name>Developer</name>
+        <param>
+          <type>const <ref refid="class_developer" kindref="compound">Developer</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="20" column="1" bodyfile="Developer.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_developer_1a3a358890cdc55c7c473bbe0865ca0dde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Developer::~Developer</definition>
+        <argsstring>()</argsstring>
+        <name>~Developer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="21" column="1" bodyfile="Developer.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_developer_1aed0b441a49c60fcfbcdeb730bc6efb79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Developer::setName</definition>
+        <argsstring>(string)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>string</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="22" column="1" bodyfile="Developer.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_developer_1afa96e363d27b88c0c54ebffadef4f728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Developer::setNumber</definition>
+        <argsstring>(int)</argsstring>
+        <name>setNumber</name>
+        <param>
+          <type>int</type>
+          <defname>num</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="23" column="1" bodyfile="Developer.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_developer_1aebac796aa948255e4ca15c8fbbc0d010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Developer::setDate</definition>
+        <argsstring>(string)</argsstring>
+        <name>setDate</name>
+        <param>
+          <type>string</type>
+          <defname>d</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="24" column="1" bodyfile="Developer.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_developer_1abcaa88f55cd1dbd58daf281f8b504172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Developer::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="25" column="1" bodyfile="Developer.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_developer_1ab1e964805d449751217f40e210596fc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Developer::getNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="26" column="1" bodyfile="Developer.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_developer_1a5ab8342af9b6352324787b66a1035c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Developer::getDate</definition>
+        <argsstring>()</argsstring>
+        <name>getDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Developer.h" line="27" column="1" bodyfile="Developer.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>Creator</label>
+        <link refid="class_creator"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Developer</label>
+        <link refid="class_developer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>my_NumberT&lt; int &gt;</label>
+        <link refid="classmy___number_t"/>
+      </node>
+      <node id="13">
+        <label>my_NumberT&lt; float &gt;</label>
+        <link refid="classmy___number_t"/>
+      </node>
+      <node id="12">
+        <label>Developer</label>
+        <link refid="class_developer"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>salary</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>number</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Developer.h" line="9" column="1" bodyfile="Developer.h" bodystart="9" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_developer_1ad157908ba8bd6ac6b16c8e28502953be" prot="protected" virt="non-virtual"><scope>Developer</scope><name>date</name></member>
+      <member refid="class_developer_1a1acf937b03598b68b93c010bfc90f702" prot="public" virt="non-virtual"><scope>Developer</scope><name>Developer</name></member>
+      <member refid="class_developer_1a24c1cde234cb63807179251c8516f69e" prot="public" virt="non-virtual"><scope>Developer</scope><name>Developer</name></member>
+      <member refid="class_developer_1a70d27630049849deaf3fbc8fab301908" prot="public" virt="non-virtual"><scope>Developer</scope><name>Developer</name></member>
+      <member refid="class_developer_1a5ab8342af9b6352324787b66a1035c69" prot="public" virt="non-virtual"><scope>Developer</scope><name>getDate</name></member>
+      <member refid="class_developer_1abcaa88f55cd1dbd58daf281f8b504172" prot="public" virt="non-virtual"><scope>Developer</scope><name>getName</name></member>
+      <member refid="class_developer_1ab1e964805d449751217f40e210596fc3" prot="public" virt="non-virtual"><scope>Developer</scope><name>getNumber</name></member>
+      <member refid="class_developer_1a0398c537a81a118c0cebd64e453554a8" prot="protected" virt="non-virtual"><scope>Developer</scope><name>name</name></member>
+      <member refid="class_developer_1af8a79869e44207cd6d3ef176cff2f2d1" prot="protected" virt="non-virtual"><scope>Developer</scope><name>number</name></member>
+      <member refid="class_developer_1adcd646e88c19d2570f285715076db8bb" prot="protected" virt="non-virtual"><scope>Developer</scope><name>salary</name></member>
+      <member refid="class_developer_1aebac796aa948255e4ca15c8fbbc0d010" prot="public" virt="non-virtual"><scope>Developer</scope><name>setDate</name></member>
+      <member refid="class_developer_1aed0b441a49c60fcfbcdeb730bc6efb79" prot="public" virt="non-virtual"><scope>Developer</scope><name>setName</name></member>
+      <member refid="class_developer_1afa96e363d27b88c0c54ebffadef4f728" prot="public" virt="non-virtual"><scope>Developer</scope><name>setNumber</name></member>
+      <member refid="class_developer_1a3a358890cdc55c7c473bbe0865ca0dde" prot="public" virt="non-virtual"><scope>Developer</scope><name>~Developer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

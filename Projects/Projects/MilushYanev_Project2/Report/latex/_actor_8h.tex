@@ -1,0 +1,183 @@
+\hypertarget{_actor_8h}{}\section{Milush\+Yanev\+\_\+\+Project2/\+Actor.h File Reference}
+\label{_actor_8h}\index{Milush\+Yanev\+\_\+\+Project2/\+Actor.\+h@{Milush\+Yanev\+\_\+\+Project2/\+Actor.\+h}}
+{\ttfamily \#include \char`\"{}Bonus\+Pt.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Game\+Date.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_actor}{Actor}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_actor_8h_af3dc1f4eaeaabc4cb2741c991bc47f3d}{load} (\hyperlink{class_game_date}{Game\+Date} \&date, \hyperlink{struct_actor}{Actor} \&player, \hyperlink{struct_actor}{Actor} \&enemy)
+\item 
+void \hyperlink{_actor_8h_adb4b7104b34632fd046d9a534eced233}{start\+Menu} ()
+\item 
+void \hyperlink{_actor_8h_a1fa62b46e875fff4cb5f5ea66f93a671}{game\+Manager} ()
+\item 
+void \hyperlink{_actor_8h_a9421d775ae363a991198f68d5dbf7b19}{start\+Option} (string \&full\+Name, string \&class\+Selected, int \&health, int \&attack)
+\item 
+void \hyperlink{_actor_8h_ae37e254cdfd11133af9b06c52f393d6e}{save} (\hyperlink{class_game_date}{Game\+Date} \&date, string full\+Name, string class\+Selected, int health, int attack)
+\item 
+void \hyperlink{_actor_8h_a0d2f7982285746f2c3086e8c3430c8aa}{player\+Attack} (\hyperlink{struct_actor}{Actor} \&target, \hyperlink{struct_actor}{Actor} \&player)
+\item 
+void \hyperlink{_actor_8h_a6ed74ea3fa73fdffd3a3bc0199d51910}{enemy\+Attack} (\hyperlink{struct_actor}{Actor} \&player, \hyperlink{struct_actor}{Actor} \&enemy)
+\item 
+void \hyperlink{_actor_8h_a4fc2c0136e62f2b645a505e3bd2d75be}{heal} (\hyperlink{struct_actor}{Actor} \&player)
+\item 
+void \hyperlink{_actor_8h_a7fffa328a80d69f42c77deccb0c98a2d}{smack} (\hyperlink{struct_actor}{Actor} \&player)
+\item 
+bool \hyperlink{_actor_8h_a81aa732ee1c52ed612ce57909dde6b75}{block} (\hyperlink{struct_actor}{Actor} \&player)
+\item 
+bool \hyperlink{_actor_8h_a9f1fc8afafd91b62e36d45f690623ec3}{battle} (\hyperlink{struct_actor}{Actor} \&player, \hyperlink{struct_actor}{Actor} \&enemy)
+\item 
+void \hyperlink{_actor_8h_a7c6049047dd1945c70484e3e37847f7b}{C\+R\+T\+R} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_actor_8h_a9f1fc8afafd91b62e36d45f690623ec3}{}\index{Actor.\+h@{Actor.\+h}!battle@{battle}}
+\index{battle@{battle}!Actor.\+h@{Actor.\+h}}
+\subsubsection[{battle(\+Actor \&player, Actor \&enemy)}]{\setlength{\rightskip}{0pt plus 5cm}bool battle (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{player, }
+\item[{{\bf Actor} \&}]{enemy}
+\end{DoxyParamCaption}
+)}\label{_actor_8h_a9f1fc8afafd91b62e36d45f690623ec3}
+
+
+Definition at line 585 of file main.\+cpp.
+
+\hypertarget{_actor_8h_a81aa732ee1c52ed612ce57909dde6b75}{}\index{Actor.\+h@{Actor.\+h}!block@{block}}
+\index{block@{block}!Actor.\+h@{Actor.\+h}}
+\subsubsection[{block(\+Actor \&player)}]{\setlength{\rightskip}{0pt plus 5cm}bool block (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{player}
+\end{DoxyParamCaption}
+)}\label{_actor_8h_a81aa732ee1c52ed612ce57909dde6b75}
+
+
+Definition at line 462 of file main.\+cpp.
+
+\hypertarget{_actor_8h_a7c6049047dd1945c70484e3e37847f7b}{}\index{Actor.\+h@{Actor.\+h}!C\+R\+T\+R@{C\+R\+T\+R}}
+\index{C\+R\+T\+R@{C\+R\+T\+R}!Actor.\+h@{Actor.\+h}}
+\subsubsection[{C\+R\+T\+R()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+R\+T\+R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_actor_8h_a7c6049047dd1945c70484e3e37847f7b}
+
+
+Definition at line 345 of file main.\+cpp.
+
+\hypertarget{_actor_8h_a6ed74ea3fa73fdffd3a3bc0199d51910}{}\index{Actor.\+h@{Actor.\+h}!enemy\+Attack@{enemy\+Attack}}
+\index{enemy\+Attack@{enemy\+Attack}!Actor.\+h@{Actor.\+h}}
+\subsubsection[{enemy\+Attack(\+Actor \&player, Actor \&enemy)}]{\setlength{\rightskip}{0pt plus 5cm}void enemy\+Attack (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{player, }
+\item[{{\bf Actor} \&}]{enemy}
+\end{DoxyParamCaption}
+)}\label{_actor_8h_a6ed74ea3fa73fdffd3a3bc0199d51910}
+
+
+Definition at line 432 of file main.\+cpp.
+
+\hypertarget{_actor_8h_a1fa62b46e875fff4cb5f5ea66f93a671}{}\index{Actor.\+h@{Actor.\+h}!game\+Manager@{game\+Manager}}
+\index{game\+Manager@{game\+Manager}!Actor.\+h@{Actor.\+h}}
+\subsubsection[{game\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}void game\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_actor_8h_a1fa62b46e875fff4cb5f5ea66f93a671}
+
+
+Definition at line 44 of file main.\+cpp.
+
+\hypertarget{_actor_8h_a4fc2c0136e62f2b645a505e3bd2d75be}{}\index{Actor.\+h@{Actor.\+h}!heal@{heal}}
+\index{heal@{heal}!Actor.\+h@{Actor.\+h}}
+\subsubsection[{heal(\+Actor \&player)}]{\setlength{\rightskip}{0pt plus 5cm}void heal (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{player}
+\end{DoxyParamCaption}
+)}\label{_actor_8h_a4fc2c0136e62f2b645a505e3bd2d75be}
+
+
+Definition at line 483 of file main.\+cpp.
+
+\hypertarget{_actor_8h_af3dc1f4eaeaabc4cb2741c991bc47f3d}{}\index{Actor.\+h@{Actor.\+h}!load@{load}}
+\index{load@{load}!Actor.\+h@{Actor.\+h}}
+\subsubsection[{load(\+Game\+Date \&date, Actor \&player, Actor \&enemy)}]{\setlength{\rightskip}{0pt plus 5cm}void load (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Date} \&}]{date, }
+\item[{{\bf Actor} \&}]{player, }
+\item[{{\bf Actor} \&}]{enemy}
+\end{DoxyParamCaption}
+)}\label{_actor_8h_af3dc1f4eaeaabc4cb2741c991bc47f3d}
+
+
+Definition at line 243 of file main.\+cpp.
+
+\hypertarget{_actor_8h_a0d2f7982285746f2c3086e8c3430c8aa}{}\index{Actor.\+h@{Actor.\+h}!player\+Attack@{player\+Attack}}
+\index{player\+Attack@{player\+Attack}!Actor.\+h@{Actor.\+h}}
+\subsubsection[{player\+Attack(\+Actor \&target, Actor \&player)}]{\setlength{\rightskip}{0pt plus 5cm}void player\+Attack (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{target, }
+\item[{{\bf Actor} \&}]{player}
+\end{DoxyParamCaption}
+)}\label{_actor_8h_a0d2f7982285746f2c3086e8c3430c8aa}
+
+
+Definition at line 369 of file main.\+cpp.
+
+\hypertarget{_actor_8h_ae37e254cdfd11133af9b06c52f393d6e}{}\index{Actor.\+h@{Actor.\+h}!save@{save}}
+\index{save@{save}!Actor.\+h@{Actor.\+h}}
+\subsubsection[{save(\+Game\+Date \&date, string full\+Name, string class\+Selected, int health, int attack)}]{\setlength{\rightskip}{0pt plus 5cm}void save (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+Date} \&}]{date, }
+\item[{string}]{full\+Name, }
+\item[{string}]{class\+Selected, }
+\item[{int}]{health, }
+\item[{int}]{attack}
+\end{DoxyParamCaption}
+)}\label{_actor_8h_ae37e254cdfd11133af9b06c52f393d6e}
+
+
+Definition at line 184 of file main.\+cpp.
+
+\hypertarget{_actor_8h_a7fffa328a80d69f42c77deccb0c98a2d}{}\index{Actor.\+h@{Actor.\+h}!smack@{smack}}
+\index{smack@{smack}!Actor.\+h@{Actor.\+h}}
+\subsubsection[{smack(\+Actor \&player)}]{\setlength{\rightskip}{0pt plus 5cm}void smack (
+\begin{DoxyParamCaption}
+\item[{{\bf Actor} \&}]{player}
+\end{DoxyParamCaption}
+)}\label{_actor_8h_a7fffa328a80d69f42c77deccb0c98a2d}
+
+
+Definition at line 501 of file main.\+cpp.
+
+\hypertarget{_actor_8h_adb4b7104b34632fd046d9a534eced233}{}\index{Actor.\+h@{Actor.\+h}!start\+Menu@{start\+Menu}}
+\index{start\+Menu@{start\+Menu}!Actor.\+h@{Actor.\+h}}
+\subsubsection[{start\+Menu()}]{\setlength{\rightskip}{0pt plus 5cm}void start\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_actor_8h_adb4b7104b34632fd046d9a534eced233}
+
+
+Definition at line 30 of file main.\+cpp.
+
+\hypertarget{_actor_8h_a9421d775ae363a991198f68d5dbf7b19}{}\index{Actor.\+h@{Actor.\+h}!start\+Option@{start\+Option}}
+\index{start\+Option@{start\+Option}!Actor.\+h@{Actor.\+h}}
+\subsubsection[{start\+Option(string \&full\+Name, string \&class\+Selected, int \&health, int \&attack)}]{\setlength{\rightskip}{0pt plus 5cm}void start\+Option (
+\begin{DoxyParamCaption}
+\item[{string \&}]{full\+Name, }
+\item[{string \&}]{class\+Selected, }
+\item[{int \&}]{health, }
+\item[{int \&}]{attack}
+\end{DoxyParamCaption}
+)}\label{_actor_8h_a9421d775ae363a991198f68d5dbf7b19}
+
+
+Definition at line 116 of file main.\+cpp.
+

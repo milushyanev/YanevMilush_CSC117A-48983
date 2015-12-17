@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_game_date" kind="class" language="C++" prot="public">
+    <compoundname>GameDate</compoundname>
+    <includes refid="_game_date_8h" local="no">GameDate.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_game_date_1ad5dd851c8831cee4459a50e893b89938" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GameDate::day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="8" column="1" bodyfile="GameDate.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_date_1ab1e375a13c1cad89b9b9c8ae5ebf3147" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GameDate::month</definition>
+        <argsstring></argsstring>
+        <name>month</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="9" column="1" bodyfile="GameDate.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_date_1a1f2e174d97a49f53732788f485313716" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GameDate::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="10" column="1" bodyfile="GameDate.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_date_1ab0e226510ab6260cd438add7ad3b0e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameDate::GameDate</definition>
+        <argsstring>()</argsstring>
+        <name>GameDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="14" column="1" bodyfile="GameDate.cpp" bodystart="10" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_date_1ac1ae5749ab973a55a85a1fd69e04e003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameDate::GameDate</definition>
+        <argsstring>(const GameDate &amp;obj)</argsstring>
+        <name>GameDate</name>
+        <param>
+          <type>const <ref refid="class_game_date" kindref="compound">GameDate</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="17" column="1" bodyfile="GameDate.cpp" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_date_1a036e058a9f70791d229de1568e1a2c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameDate::~GameDate</definition>
+        <argsstring>()</argsstring>
+        <name>~GameDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="20" column="1" bodyfile="GameDate.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_date_1a55608e9a69e32403ae008291681bbf59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameDate::setMonth</definition>
+        <argsstring>(int)</argsstring>
+        <name>setMonth</name>
+        <param>
+          <type>int</type>
+          <defname>m</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="23" column="1" bodyfile="GameDate.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_date_1aba5c6ab5a4f050ceb431fbcd037009d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameDate::setDay</definition>
+        <argsstring>(int)</argsstring>
+        <name>setDay</name>
+        <param>
+          <type>int</type>
+          <defname>d</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="24" column="1" bodyfile="GameDate.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_date_1adcaba92c4db1fa259a5d8ae9704064e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameDate::setYear</definition>
+        <argsstring>(int)</argsstring>
+        <name>setYear</name>
+        <param>
+          <type>int</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="25" column="1" bodyfile="GameDate.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_date_1aa5f51d52c16e608253fd4c2762a1dfbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GameDate::getDay</definition>
+        <argsstring>()</argsstring>
+        <name>getDay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="31" column="1" bodyfile="GameDate.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_date_1a2b8fba33da7e4820587a2e6ccc9411e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GameDate::getMonth</definition>
+        <argsstring>()</argsstring>
+        <name>getMonth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="32" column="1" bodyfile="GameDate.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_date_1ac996cd8d1fbd5a4ad9ede22a6b9aa7aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GameDate::getYear</definition>
+        <argsstring>()</argsstring>
+        <name>getYear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="33" column="1" bodyfile="GameDate.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_date_1ae0829c804c22c72d1fe34080aed5cea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameDate::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="34" column="1" bodyfile="GameDate.cpp" bodystart="58" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_game_date_1a46f2fcc90a57600fd45b783d9f8cd0c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameDate::MDY</definition>
+        <argsstring>(GameDate *)</argsstring>
+        <name>MDY</name>
+        <param>
+          <type><ref refid="class_game_date" kindref="compound">GameDate</ref> *</type>
+          <defname>date</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameDate.h" line="28" column="1" bodyfile="GameDate.cpp" bodystart="71" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="GameDate.h" line="5" column="1" bodyfile="GameDate.h" bodystart="4" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_game_date_1ad5dd851c8831cee4459a50e893b89938" prot="private" virt="non-virtual"><scope>GameDate</scope><name>day</name></member>
+      <member refid="class_game_date_1ab0e226510ab6260cd438add7ad3b0e6f" prot="public" virt="non-virtual"><scope>GameDate</scope><name>GameDate</name></member>
+      <member refid="class_game_date_1ac1ae5749ab973a55a85a1fd69e04e003" prot="public" virt="non-virtual"><scope>GameDate</scope><name>GameDate</name></member>
+      <member refid="class_game_date_1aa5f51d52c16e608253fd4c2762a1dfbb" prot="public" virt="non-virtual"><scope>GameDate</scope><name>getDay</name></member>
+      <member refid="class_game_date_1a2b8fba33da7e4820587a2e6ccc9411e0" prot="public" virt="non-virtual"><scope>GameDate</scope><name>getMonth</name></member>
+      <member refid="class_game_date_1ac996cd8d1fbd5a4ad9ede22a6b9aa7aa" prot="public" virt="non-virtual"><scope>GameDate</scope><name>getYear</name></member>
+      <member refid="class_game_date_1a46f2fcc90a57600fd45b783d9f8cd0c3" prot="public" virt="non-virtual"><scope>GameDate</scope><name>MDY</name></member>
+      <member refid="class_game_date_1ab1e375a13c1cad89b9b9c8ae5ebf3147" prot="private" virt="non-virtual"><scope>GameDate</scope><name>month</name></member>
+      <member refid="class_game_date_1ae0829c804c22c72d1fe34080aed5cea3" prot="public" virt="non-virtual"><scope>GameDate</scope><name>print</name></member>
+      <member refid="class_game_date_1aba5c6ab5a4f050ceb431fbcd037009d3" prot="public" virt="non-virtual"><scope>GameDate</scope><name>setDay</name></member>
+      <member refid="class_game_date_1a55608e9a69e32403ae008291681bbf59" prot="public" virt="non-virtual"><scope>GameDate</scope><name>setMonth</name></member>
+      <member refid="class_game_date_1adcaba92c4db1fa259a5d8ae9704064e5" prot="public" virt="non-virtual"><scope>GameDate</scope><name>setYear</name></member>
+      <member refid="class_game_date_1a1f2e174d97a49f53732788f485313716" prot="private" virt="non-virtual"><scope>GameDate</scope><name>year</name></member>
+      <member refid="class_game_date_1a036e058a9f70791d229de1568e1a2c73" prot="public" virt="non-virtual"><scope>GameDate</scope><name>~GameDate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,24 @@
+digraph "Bonus::getBonus"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Bonus::getBonus",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Bonus::BonH",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bonus.html#aad2515d0e2e8a4e0c6fcbbd01c167712"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="playerTurn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a8cea86ce6455bbc0fe2dd9491af1444e"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="battle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a9f1fc8afafd91b62e36d45f690623ec3"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="gameManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a1fa62b46e875fff4cb5f5ea66f93a671"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="startMenu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#adb4b7104b34632fd046d9a534eced233"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Bonus::AI_Bns",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bonus.html#ae2f51b8407ff820aa8a0a180d2158554"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="enemyTurn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a6c34c0f60b1ebdcf3f8835bc5e6ca22c"];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}
